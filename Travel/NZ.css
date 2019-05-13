@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* unvisited link */
+a:link, a:visited {
+	font: 12px arial, sans-serif;
+	text-decoration: none;
+    color: grey;
+}
+
+/* mouse over link */
+a:hover {
+	text-decoration: none;
+    color: #86A697;
+}
+
+/* selected link */
+a:active {
+	text-decoration: none;
+    color: white;
+}
+
+.map {
+    background-image: url('NZmap.svg');
+    background-size : 100% 100%;
+	background-repeat:no-repeat;
+}
+
+
+.NZContent {
+    max-width: 1000px;
+	width:inherit;
+	height:inherit;
+	margin-top:0px;
+	position:absolute;	
+	overflow: scroll;
+    
+}
+
+.travel {
+    margin-left: 220px;
+    margin-top:-35px;
+    width: calc(100% - 225px);
+    height: 100%;
+}
+
