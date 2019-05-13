@@ -1,0 +1,79 @@
+.pageSideBar {
+    float:left;
+    width:200px;
+    height: calc(100% - 80px);
+    overflow-y: scroll;
+}
+
+.textkeep {
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: visible;
+}
+
+
+.pageMarkTitle {    
+    font-weight: 900;
+    color:#7DB9DE;
+    position: sticky;
+}
+.pageMarkTitleYellow {  
+    font-weight: 900;
+    color:#FFE533;
+}
+.pageMark{
+    margin-top: -25px;
+    position: sticky;
+}
+
+.listBar {
+    margin-top:22px;
+    margin-bottom: 0;
+    margin-left:8px;
+    margin-right:8px;
+    overflow-y: scroll;
+    overflow-x: visible;
+}
+
+.pageContentWidth {
+    width: calc(100% - 230px);
+    height: calc(100% - 80px);  
+}
+
+.aspect-ratio{
+    width:inherit;
+    position:relative;
+    overflow: hidden;
+}
+.pageContent {
+    max-width: 1000px;
+	width:inherit;
+    height:inherit;
+	margin-top:38px;
+	position:absolute;	
+	overflow: scroll;    
+}
+
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56%; /* The height of the item will now be 56% of the width. */
+}
+
+.aspect-ratio:before{
+    content:"";
+    display:block;
+    padding-top: 62.5%;
+}
+
+a{
+    color:#333132;
+}
+
+.source {
+    margin-left:8%;
+    width:80%;
+    height:80%;
+
+}
