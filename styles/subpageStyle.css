@@ -1,0 +1,103 @@
+.logohome{
+    position:fixed;
+    z-index: 100;
+}
+
+.hamburger {
+    position:fixed;
+    z-index: 10000;
+    margin-top: 70px;
+}
+
+
+.toHomeLogo{
+    position: relative;
+    width:80px;
+    height: auto;
+    margin-top: 20px;
+    z-index: 100;
+}
+
+.catalogue{
+    padding:0 80px;  
+    background: white; 
+    color:#3A8FB7; 
+    margin-top: -60px; 
+    z-index:10;
+}
+
+a.catalogue:hover{
+    background: #DDD23B;
+    cursor: pointer;
+}
+
+a.catalogue:active{
+    background: rgba(221,210,59,0.6);
+}
+
+.catalogue:hover{
+    color:#211E55;
+}
+
+.closePopup{
+    width: 100vw;
+    height: calc(100vh - 20px);
+    position: absolute;
+}
+
+.extMenu{
+    max-width: 600px;
+    margin:0;
+    background-color: rgba(255,255,255,0.8); 
+    position:absolute; 
+    margin-top:85px; 
+    margin-left: 35px; 
+    box-shadow:5px 10px 18px #888888;
+}
+
+.extTitle{
+    margin:8px;
+    font-weight: 550;  
+    font-size:12px;
+}
+.extSubtitle{
+    padding-left: 30px;
+    color: #C8C8C8;
+    margin:0;
+    font-size:14px;
+}
+
+.menuBlock{
+    display: inline-block;
+}
+
+
+ul {
+    vertical-align: top;
+	list-style-type: none;
+    display: inline-block;
+	position: relative;
+	margin-top:5px;
+    margin-left: 10px;
+}
+
+
+h1{
+    font-size:12pt;
+    position: relative;
+     background-color: white;
+    padding-right: 10px;
+}
+
+h1:after{
+    content:"";
+    display:block;
+    width:500px;
+    height: 1px;
+    background:black;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}

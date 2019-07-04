@@ -1,0 +1,281 @@
+html{min-width: 480px; min-height: 480px;}
+body{min-width: 480px; min-height: 480px; margin:0; overflow-x: hidden; }
+
+.logo, .mark, .top-img, .mylife, .index, .squareTile, .longImg, .squareTileR, .titleText{
+    position: absolute;
+}
+
+
+
+p { color:#563F2E; }
+a { text-decoration: none;
+    font-size:12px;
+    color:#3A8FB7;
+}
+
+a:hover {
+    color:#211E55;
+}
+
+h4, h5{
+    color: white;
+    margin:0px 10px;
+    font-weight: 400;
+}
+
+hr {
+    border: 0; 
+    border-top: 1px solid #F7941D;
+}
+
+.backpattern {
+    background-image:url(../mainImg/backtri.png); 
+    background-repeat: repeat;
+}
+.top-column {
+    width:100vw;
+    height:100vh;
+}
+
+.logo, .mark {
+    z-index: 100;
+}
+
+.mark{
+    opacity: 0.8;
+}
+/* Hide the images by default*/
+.top-img {
+  display: none;
+} 
+
+.bannerImg {
+    width:inherit;
+    height:inherit;
+    object-position: center;
+    object-fit: cover;
+}
+
+.index {  
+    right:0;
+    bottom:0;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    color: rgba(255,255,255,0.6);
+    padding:10px;
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+/* On hover, make no transparency */
+.prev:hover, .next:hover {
+  color: white;
+}
+
+/* The dots/bullets/indicators */
+.dotarea{
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin:18px 10px;
+  border-radius: 50%;
+  border:1px solid rgba(255,255,255,0.6);
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+.mylife{
+    height: auto;
+    bottom:-30px;;
+}
+
+.title{
+    margin:8px;
+    font-weight: 550;  
+}
+
+.subtitle{
+    padding-left: 60px;
+    color: #C8C8C8;
+    margin:0;
+}    
+
+
+.tileText {
+    margin-left: -20px;
+}
+.maxWidth{
+    max-width: 900px;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.deco{
+    margin:-3px;
+    float:left;
+}
+
+
+.squareTile, .squareTileR, .longImg{
+    z-index: 100;
+}
+
+.description{
+    color: #333D46;
+}
+
+
+.mylife{
+    font-size: 20pt; 
+    color:white;   
+}
+
+.menu{
+    float:right;
+    margin-right:30px;
+    margin-top:10px;
+}
+
+.greyback, .greybackL{
+    background-image:url(../mainImg/texture.png); 
+    background-repeat: repeat;
+    background-color: #DDD23B;
+    margin-top: 50px;
+    z-index: 5;
+}
+
+
+li {
+    vertical-align: top;
+	list-style-type: none;
+    display: inline-block;
+	position: relative;
+	margin-top:5px;
+    margin-left: 10px;
+}
+
+
+.tileImg{
+    width:calc(100% - 22px);
+    height:calc(100% - 18px);
+    border: 1px solid #33364D;
+    position: absolute;
+    margin: -22px 0px 0px 20px;
+}
+
+.tileImgR{
+    width:calc(100% - 22px);
+    height:calc(100% - 18px);
+    border: 1px solid #33364D;
+    position: absolute;
+    margin: -22px 22px 0px 22px;
+}
+
+.tileText, tileTextR {
+    color: #333D46;
+}
+
+.rotate {
+    transform-origin: 20px 20px;
+    transform: rotate(-270deg);
+    /* Safari */
+    -webkit-transform: rotate(-270deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-270deg);
+
+    /* IE */
+    -ms-transform: rotate(-270deg);
+
+    /* Opera */
+    -o-transform: rotate(-270deg);
+
+}
+
+.l3s1, .l2s1{
+    display: inline-block;
+}
+
+.rowCube{
+    width: inherit;
+    margin:30px 0;
+}
+
+.blockText{
+    margin: 0;
+    font-size: 10pt;
+    
+}
+
+.container{
+    width:100%;
+    padding-top: 100%;
+    position: relative;
+}
+.square{
+    width: inherit;
+    height:inherit;
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.footer{
+    width: inherit;
+    height:auto;
+    background-color: #211E55;
+    padding: 20px;
+    display: block;
+    overflow: auto; 
+}
+
+.goRight{
+    float:right;
+}
+    
+.footer-info{
+    margin-right: 0;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+}
