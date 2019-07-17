@@ -1,5 +1,5 @@
 html{min-width: 480px; min-height: 480px;}
-body{min-width: 480px; min-height: 480px; margin:0; overflow-x: hidden; }
+body{min-width: 480px; min-height: 480px; margin:0; overflow-x: hidden; font-family: sans-serif;}
 
 .logo, .mark, .top-img, .mylife, .index, .squareTile, .longImg, .squareTileR, .titleText{
     position: absolute;
