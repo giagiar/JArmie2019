@@ -11,6 +11,21 @@
     .description{          
         padding:20% 8% 15% 70px;
     }
+    
+    p.mainDescriptionEn, p.mainDescriptionCh {
+        padding:10px 10%;
+
+        }
+
+
+    .slash {
+       width: 80%;
+       height:1px;
+       margin-left: 5% ; 
+       margin-top: -2%
+    }
+
+
 }
 
 /*pad 640-959*/
@@ -24,6 +39,23 @@
     .description{        
         padding:20% 10% 15% 10%;
     }
+    p.mainDescriptionEn {
+        padding:10px 20% 0 30px;
+
+    }
+
+    p.mainDescriptionCh {
+        padding:10px 30px 0 20%;
+
+    }
+
+    .slash {
+       width: 80%;
+       -webkit-transform:rotate(-30deg); 
+       margin-left: 5%; 
+       margin-top: 0;
+    }
+
 }
 
 /* 960up */
@@ -34,4 +66,22 @@
     .description{        
         padding:25% 10% 15% 25%;
     }
+        p.mainDescriptionEn {
+        padding:10px 40% 10px 30px;
+
+    }
+
+    p.mainDescriptionCh {
+        padding:10px 30px 10px 40%;
+
+    }
+
+    .slash {
+       width: 60%;
+       -webkit-transform:
+       rotate(-45deg); 
+       margin-left: 20%; 
+       margin-top: -10px;
+    }
+
 }

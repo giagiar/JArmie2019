@@ -1,3 +1,5 @@
+.slash {position:absolute;}
+
 .logohome{
     position:fixed;
     margin: -5px;    
@@ -56,8 +58,21 @@ a.catalogue:active{
 
 .subdiv{
     margin-left: 70px;
+
 }
 
+h1.mainDescription {   
+    text-align: center;
+    font-size:12pt;
+    position: relative;
+
+
+}
+
+.slash{
+    border-bottom: 1px solid #DDD23B;
+    z-index:-1;
+}
 .descriptionW{
     color: white;
     position: relative;
@@ -110,17 +125,10 @@ ul {
 }
 
 
-h1{
-    font-size:12pt;
-    position: relative;
-     background-color: white;
-    padding-right: 10px;
-}
-
-h1:after{
+h1:before{
     content:"";
     display:block;
-    width:500px;
+    width:40%;
     height: 1px;
     background:black;
     position:absolute;
