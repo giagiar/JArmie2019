@@ -273,7 +273,7 @@ li {
 }
 
 .footer{
-    width: inherit;
+    width: 100vw;
     height:auto;
     background-color: #211E55;
     padding: 20px;
