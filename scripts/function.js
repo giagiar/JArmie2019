@@ -102,4 +102,21 @@ function content(){
         document.getElementById('subpageContent').src="../life.html";
 }
 
+
+function changeUIUX(id){
+    document.getElementById(optoma).style.display = 'none';
+    document.getElementById(ASUS).style.display = 'none';
+    document.getElementById(Gemtek).style.display = 'none';
+    switch (id){
+        case optoma:
+            document.getElementById(optoma).style.display = 'inline';
+            break;
+        case ASUS:
+             document.getElementById(ASUS).style.display = 'inline';
+             break;
+        case Gemtek:
+            document.getElementById(Gemtek).style.display = 'inline';
+            break;
+    default:  break;}
+}
  

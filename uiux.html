@@ -27,7 +27,7 @@
             <a href="index.html"><img class="toHomeLogo" src="subImg/logohome.png"/></a>
         </div> 
         
-        <div class="hamburger"><p class="rotate"> <a class="catalogue" onclick="openWindow('cataList');"><span>@ work | </span><span style="font-size: 10pt;">UI & UX Design</span></a></p>
+        <div class="hamburger"><p class="rotate"> <a class="catalogue" onclick="changeUIUX('optoma');"><span>@ work | </span><span style="font-size: 10pt;">UI & UX Design</span></a></p>
         </div>
              
         <div id="cataList" class="cataList" style="display:none; position: fixed; z-index: 1000;">  
@@ -69,15 +69,18 @@
     </div>
     
     
-        <div class="backpattern">
-            <div><div class="subdiv"><h1 class="mainDescription">Optoma</h1>
-                              
+    <div class="backpattern">
+            <h1 class="mainDescription subdiv"><span onclick="changeUIUX('optoma');">Optoma</span> <span onclick="changeUIUX('ASUS');"> ASUS </span> <span onclick="changeUIUX('Gemtek');"> Gemtek</span></h1>
+            
+                
+            <div id="optoma"  style="display:none;">   
+            <div><div class="subdiv">
             <p class="mainDescriptionEn">In charge of the design style of Optoma’s user interface.
-            According to the traditional Projector settings, merge the settings in android and then rearrange the grouping from depth to breadth. Find out the best layout for smart projector which can be control by simplest remote control and touch. Follow the design guide of Optoma, make the appearance become unique for the brand</p>
+            According to the traditional Projector settings, merge the settings in android and then rearrange the grouping from depth to breadth. Find out the best layout for smart projector which can be control by simplest remote control and touch. Follow the design guide of Optoma, make the appearance become unique for the brand.</p>
             <div class="slash"></div> 
             <p class="mainDescriptionCh">軟體部門的第一位員工，進公司後著手設計手機遙控器app，緊接著負責android projector的整體設計，帶入奧圖碼的CIS系統，做出有公司風格的專屬介面。將投影機既有的設定打散重組，融合android新增的設定，應用大螢幕特色加強廣度取代深度的架構。</p>
                 
-            </div></div></div>
+            </div></div>
             
             <div><img style="width: 100%; height:auto; position: absolute; z-index:1;" src="mainImg/projectorUI.jpg"/>
             <div class="description"><h2 class="descriptionW">Android Projector | 投影機介面</h2>
@@ -98,18 +101,78 @@
                 <h6 class="descriptionY">Illustrator + InDesign</h6>
                 <p class="descriptionW">延續投影機的介面<br><br><a>see more | 看更多 > </a></p></div></div>
 
-           
-
-
-        <div id="footer" class="footer">
-            <div class="goRight">
-                <h5>© JArmie／giagiar | 2019</h5>
-                <div class="footer-info">
-                    <a href="mailto:giagiar.x@gmail.com" target="_blank" title="Mail JArmie"><img style="width:30px; margin-right: 10px;" src="mainImg/email.png" alt="Mail JArmie"></a>
-                    <a href="https://www.facebook.com/giagiar" target="_blank" title="Facebook"><img style="width:30px; margin-right: 10px;" src="mainImg/fb.png" alt="Facebook"></a>
-                    <a href="https://www.couchsurfing.com/people/giagiar" target="_blank" title="Couchsurfing"><img style="width:30px; margin-right: 10px;" src="mainImg/cs.png" alt="Couchsurfing"></a>
-                    <a href="#toTop"><img style="width:30px;" src="mainImg/totop.png"></a></div>
             </div>
+    
+    
+            <div id="ASUS"  style="display:inline;">   
+            <div><div class="subdiv">
+            <p class="mainDescriptionEn">The job that had no need to code but make me realized how important an UI designer have to understand the technical part. The thinking of overall flow trained the ability of my logics.</p>
+            <div class="slash"></div> 
+            <p class="mainDescriptionCh">軟體部門的第一位員工，進公司後著手設計手機遙控器app，緊接著負責android projector的整體設計，帶入奧圖碼的CIS系統，做出有公司風格的專屬介面。將投影機既有的設定打散重組，融合android新增的設定，應用大螢幕特色加強廣度取代深度的架構。</p>
+                
+            </div></div>
+            
+            <div><img style="width: 100%; height:auto; position: absolute; z-index:1;" src="mainImg/projectorUI.jpg"/>
+            <div class="description"><h2 class="descriptionW">Android Projector | 投影機介面</h2>
+                <h6 class="descriptionY">Illustrator + JustInMind + Android studio + Photoshop + Xd</h6><p class="descriptionW">從五吋到一百吋，從觸控到遙控，有早期做機上盒的熟悉，但投影機光線造成的亮度色彩變化又是另一種認識。<br><br><a>see more | 看更多 > </a></p></div></div>
+            
+            <div><img style="width: 100%; height:auto; position: absolute; z-index:1;" src="mainImg/projectorUI.jpg"/>
+            <div class="description"><h2 class="descriptionW">Remote control app | 手機遙控器</h2>
+                <h6 class="descriptionY">Illustrator + InDesign</h6>
+                <p class="descriptionW">從五吋到一百吋，從觸控到遙控，有早期做機上盒的熟悉，但投影機光線造成的亮度色彩變化又是另一種認識。<br><br><a>see more | 看更多 > </a></p></div></div>
+            
+            <div><img style="width: 100%; height:auto; position: absolute; z-index:1;" src="mainImg/projectorUI.jpg"/>
+            <div class="description"><h2 class="descriptionW">Chatbot | 自動客服</h2>
+                <h6 class="descriptionY">Illustrator + Xd + Chatfuel + Facebook</h6>
+                <p class="descriptionW">從五吋到一百吋，從觸控到遙控，有早期做機上盒的熟悉，但投影機光線造成的亮度色彩變化又是另一種認識。<br><br><a>see more | 看更多 > </a></p></div></div>     
+            
+                        <div><img style="width: 100%; height:auto; position: absolute; z-index:1;" src="mainImg/projectorUI.jpg"/>
+            <div class="description"><h2 class="descriptionW">Interactive Flat Panel | 互動大屏</h2>
+                <h6 class="descriptionY">Illustrator + InDesign</h6>
+                <p class="descriptionW">延續投影機的介面<br><br><a>see more | 看更多 > </a></p></div></div>
+
+            </div>
+            
+            
+            <div id="Gemtek"  style="display:inline;">   
+            <div><div class="subdiv">
+            <p class="mainDescriptionEn">The background of CIS helped me a lot in coding. The concept of the space in 3D supported me to form the shape easily. Fun to give a trail. It’s a pity that hardware is not powerful enough to fulfill the thought.</p>
+            <div class="slash"></div> 
+            <p class="mainDescriptionCh">軟體部門的第一位員工，進公司後著手設計手機遙控器app，緊接著負責android projector的整體設計，帶入奧圖碼的CIS系統，做出有公司風格的專屬介面。將投影機既有的設定打散重組，融合android新增的設定，應用大螢幕特色加強廣度取代深度的架構。</p>
+                
+            </div></div>
+            
+            <div><img style="width: 100%; height:auto; position: absolute; z-index:1;" src="mainImg/projectorUI.jpg"/>
+            <div class="description"><h2 class="descriptionW">Android Projector | 投影機介面</h2>
+                <h6 class="descriptionY">Illustrator + JustInMind + Android studio + Photoshop + Xd</h6><p class="descriptionW">從五吋到一百吋，從觸控到遙控，有早期做機上盒的熟悉，但投影機光線造成的亮度色彩變化又是另一種認識。<br><br><a>see more | 看更多 > </a></p></div></div>
+            
+            <div><img style="width: 100%; height:auto; position: absolute; z-index:1;" src="mainImg/projectorUI.jpg"/>
+            <div class="description"><h2 class="descriptionW">Remote control app | 手機遙控器</h2>
+                <h6 class="descriptionY">Illustrator + InDesign</h6>
+                <p class="descriptionW">從五吋到一百吋，從觸控到遙控，有早期做機上盒的熟悉，但投影機光線造成的亮度色彩變化又是另一種認識。<br><br><a>see more | 看更多 > </a></p></div></div>
+            
+            <div><img style="width: 100%; height:auto; position: absolute; z-index:1;" src="mainImg/projectorUI.jpg"/>
+            <div class="description"><h2 class="descriptionW">Chatbot | 自動客服</h2>
+                <h6 class="descriptionY">Illustrator + Xd + Chatfuel + Facebook</h6>
+                <p class="descriptionW">從五吋到一百吋，從觸控到遙控，有早期做機上盒的熟悉，但投影機光線造成的亮度色彩變化又是另一種認識。<br><br><a>see more | 看更多 > </a></p></div></div>     
+            
+                        <div><img style="width: 100%; height:auto; position: absolute; z-index:1;" src="mainImg/projectorUI.jpg"/>
+            <div class="description"><h2 class="descriptionW">Interactive Flat Panel | 互動大屏</h2>
+                <h6 class="descriptionY">Illustrator + InDesign</h6>
+                <p class="descriptionW">延續投影機的介面<br><br><a>see more | 看更多 > </a></p></div></div>
+
+            </div>
+    </div>
+    
+    <div id="footer" class="footer">
+        <div class="goRight">
+            <h5>© JArmie／giagiar | 2019</h5>
+            <div class="footer-info">
+                <a href="mailto:giagiar.x@gmail.com" target="_blank" title="Mail JArmie"><img style="width:30px; margin-right: 10px;" src="mainImg/email.png" alt="Mail JArmie"></a>
+                <a href="https://www.facebook.com/giagiar" target="_blank" title="Facebook"><img style="width:30px; margin-right: 10px;" src="mainImg/fb.png" alt="Facebook"></a>
+                <a href="https://www.couchsurfing.com/people/giagiar" target="_blank" title="Couchsurfing"><img style="width:30px; margin-right: 10px;" src="mainImg/cs.png" alt="Couchsurfing"></a>
+                <a href="#toTop"><img style="width:30px;" src="mainImg/totop.png"></a></div>
         </div>
+    </div>
 </body>
 </html>
