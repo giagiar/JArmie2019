@@ -4,7 +4,7 @@
    .top-img {
         width:calc(100vw - (100vh * 0.075)); 
         height:calc(100vh * 0.9); 
-        bottom:0;
+        margin-top: calc(100vh * 0.1); 
         overflow: hidden;
     }
 
@@ -135,7 +135,7 @@
     }
     
     .yellowback, .yellowbackL{
-        width:inherit;
+        width:100vw;
         height:auto;
         margin-top: calc(100vw * 0.25);
     }
