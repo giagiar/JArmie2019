@@ -52,12 +52,14 @@ function closeWindow(id){
 }
 
 function openWindow(id) {
+    
     if (document.getElementById(id).style.display === 'none' ){
         document.getElementById(id).style.display = 'inline';
     }
     else {
         document.getElementById(id).style.display = 'none';
    }
+        
 } 
 
 
@@ -98,25 +100,16 @@ function content(){
         document.getElementById('subpageContent').src="../experience.html";
     else if (page===2)
         document.getElementById('subpageContent').src="../work.html";
-    else if (page===3)
-        document.getElementById('subpageContent').src="../life.html";
+    else if (page===3);
 }
 
 
-function changeUIUX(id){
-    document.getElementById(optoma).style.display = 'none';
-    document.getElementById(ASUS).style.display = 'none';
-    document.getElementById(Gemtek).style.display = 'none';
-    switch (id){
-        case optoma:
-            document.getElementById(optoma).style.display = 'inline';
-            break;
-        case ASUS:
-             document.getElementById(ASUS).style.display = 'inline';
-             break;
-        case Gemtek:
-            document.getElementById(Gemtek).style.display = 'inline';
-            break;
-    default:  break;}
+function changeUI(id,n){
+    var tabNum = document.getElementById(id).getElementsByClassName('com');
+    for (var i=0; i < tabNum.length; i++) {
+      tabNum[i].style.display = 'none';  
+    }
+    document.getElementById(id + n).style.display = 'block';
+
 }
  

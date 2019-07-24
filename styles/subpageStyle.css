@@ -1,5 +1,5 @@
 
-.slash {position:absolute;}
+.slash{position:absolute;}
 
 .logohome{
     position:fixed;
@@ -7,6 +7,9 @@
     z-index: 100000;
 }
 
+#com1, #com2, #com3{
+    display: none;
+}
 
 .toHomeLogo{
     position: relative;
@@ -57,22 +60,68 @@ a.catalogue:active{
     position: absolute;
 }
 
-.subdiv{
-    margin-left: 70px;
+.secondtitleEn, .secondtitleCh{
+    transform: rotate(-20deg);
+    /* Safari */
+    -webkit-transform: rotate(-20deg);
 
+    /* Firefox */
+    -moz-transform: rotate(-20deg);
+
+    /* IE */
+    -ms-transform: rotate(-20deg);
+
+    /* Opera */
+    -o-transform: rotate(-20deg);
 }
 
-h1.mainDescription {   
+.secondtitleEn{
+    background-color: rgba(33,30,85,0.6);
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.secondtitleCh{
+    background-color: rgba(255,255,255,0.6);
+    border-top: 1px solid #211E55;
+    border-bottom: 1px solid #211E55;
+}
+
+.backImg{
+    margin-bottom: 50px;
+}
+.subdiv{
+    margin-left: 70px;
+}
+
+.divTitle:hover{
+    color:#211E55;
+}
+
+h1.divTitle {
+    display:inline;
     text-align: center;
     font-size:12pt;
     position: relative;
-
-
+    color: #3A8FB7;
+    margin-left: 10px;
 }
 
 .slash{
     border-bottom: 1px solid #DDD23B;
     z-index:-1;
+}
+
+.projectdescription{
+    color: #333D46;
+    position: absolute;
+    z-index:10;
+}
+
+.mainDescriptionEn{
+    background-color:rgba(33,30,85,0.6);
+    
+    color:white;
 }
 .descriptionW{
     color: white;
@@ -126,18 +175,22 @@ ul {
 }
 
 
-h1:before{
+.headTitle {
+    padding-left: 30%;
+}
+.headTitle:before{
     content:"";
     display:block;
-    width:40%;
+    width:70%;
     height: 1px;
-    background:black;
+    background:#3A8FB7;
     position:absolute;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: -1;
 }
+
 
 
 .projectimg{
