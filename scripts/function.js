@@ -105,11 +105,14 @@ function content(){
 
 
 function changeUI(id,n){
-    var tabNum = document.getElementById(id).getElementsByClassName('com');
+    var tabNum = document.getElementsByClassName(id);
     for (var i=0; i < tabNum.length; i++) {
       tabNum[i].style.display = 'none';  
+        var j=i+1;
+       document.getElementById('btn' + id + j).removeAttribute("disabled"); 
     }
     document.getElementById(id + n).style.display = 'block';
+    document.getElementById('btn' + id + n).setAttribute("disabled", true);
 
 }
  

@@ -21,7 +21,7 @@
 }
 
 .toHomeLogo:hover{
-    background-color: rgba(221,210,59,0.6);
+    background-color: rgba(33,30,85,0.6);
 }
 
 
@@ -35,24 +35,22 @@
 .catalogue{
     padding:3px 70px;  
     background: rgb(250,250,250); 
-    color:#3A8FB7; 
+    color:#D0104C; 
     margin-top: -60px; 
     z-index:10;
 }
 
 a.catalogue:hover{
-    background: rgba(221,210,59,0.6);
-    color: white;
+    background: rgb(250,250,250); 
+    color: #F596AA;
     cursor: pointer;
 }
 
 a.catalogue:active{
-    color:#211E55;
+    background: rgba(33,30,85,0.6);
+    color:white;
 }
 
-.catalogue:hover{
-    background: rgba(221,210,59,0.6); 
-}
 
 .closePopup{
     width: 100vw;
@@ -95,16 +93,55 @@ a.catalogue:active{
 }
 
 .divTitle:hover{
-    color:#211E55;
+    color:#F596AA;
+
 }
 
-h1.divTitle {
-    display:inline;
-    text-align: center;
+.divTitle:disabled:hover{
+    color: #D0104C;
+}
+
+.divTitle:disabled:after{
+    background-color:#D0104C;
+    content: "";
+    display:block;
+    height: 2px;
+    width:20%;   
+    margin-left: 40%;
+    margin-top: 2px;
+}
+
+
+.divTitle {
     font-size:12pt;
-    position: relative;
-    color: #3A8FB7;
-    margin-left: 10px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: #D0104C;
+    margin-left: 30px;
+}
+
+.rowTitle{
+    width:100vw;
+    padding: 30px 0;
+    background: white; 
+    text-align: center;
+}
+
+.rowTitle span{
+    display:inline-block; 
+}
+
+
+.headTitle:before{
+ background-color:#D0104C;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 1500%;
+ right: 0.5em;
+ margin-left: -1500%;
 }
 
 .slash{
@@ -113,16 +150,21 @@ h1.divTitle {
 }
 
 .projectdescription{
-    color: #333D46;
     position: absolute;
     z-index:10;
 }
 
 .mainDescriptionEn{
-    background-color:rgba(33,30,85,0.6);
-    
+    background-color:rgba(33,30,85,0.6);    
     color:white;
 }
+
+.mainDescriptionCh{
+    background-color: rgba(255,255,255,0.6);
+    border-top: 1px solid #211E55;
+    border-bottom: 1px solid #211E55;
+    }
+
 .descriptionW{
     color: white;
     position: relative;
@@ -134,8 +176,8 @@ p.descriptionW, h2.descriptionW{
     margin:8px 0;
 }
 
-h6.descriptionY{
-    color:#DDD23B;
+h6.descriptionB{
+    color:#3A8FB7;
     margin:0;
 }
 .extMenu{
@@ -173,24 +215,6 @@ ul {
 	margin-top:5px;
     margin-left: 10px;
 }
-
-
-.headTitle {
-    padding-left: 30%;
-}
-.headTitle:before{
-    content:"";
-    display:block;
-    width:70%;
-    height: 1px;
-    background:#3A8FB7;
-    position:absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
-
 
 
 .projectimg{

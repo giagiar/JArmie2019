@@ -8,7 +8,7 @@
         font-size: 14pt;
     }
     
-    .description{          
+    .projectdescription{          
         padding:20% 8% 15% 70px;
     }
     
@@ -22,7 +22,7 @@
         transform-origin: 60%;
         width:80%;
         font-size:11pt;
-        padding:40px 60px;
+        padding:40px 65px;
     }
 
     .backImg{
@@ -33,7 +33,9 @@
     
     .slash {
        width:calc(100vw - 70px);
+       -webkit-transform:rotate(-5deg); 
        height:1px;
+        margin-top: -5px;
     }
 
 
@@ -41,13 +43,16 @@
 
 /*pad 640-959*/
 @media screen and (min-width:640px) and (max-width:959px) {
+    .extMenu{
+        width:75%;
+    }
     p.descriptionW{
         font-size: 11pt;
     }
     h2.descriptionW{
         font-size: 15pt;
     }
-    .description{        
+    .projectdescription{        
         padding:20% 10% 15% 10%;
     }
     p.mainDescriptionEn {
@@ -85,13 +90,16 @@
 
 /* 960up */
 @media screen and (min-width:960px){
+    .extMenu{
+        width:60%;
+    }
     p.descriptionW{
         font-size: 12pt;
     }
-    .description{        
+    .projectdescription{        
         padding:25% 10% 15% 25%;
     }
-        p.mainDescriptionEn {
+    p.mainDescriptionEn {
         padding:20px 40% 20px 30px;
 
     }

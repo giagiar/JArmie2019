@@ -10,6 +10,11 @@ body{min-width: 320px; min-height: 320px; margin:0; overflow-x: hidden;  width:1
     position: absolute;
 }
 
+button{
+    cursor: pointer;
+    border:none;
+    background: none;
+}
 
 
 p { color:#563F2E; 
@@ -19,11 +24,11 @@ p { color:#563F2E;
 
 a { text-decoration: none;
     font-size:12px;
-    color:#3A8FB7;
+    color:#D0104C;
 }
 
 a:hover {
-    color:#211E55;
+    color:#F596AA;
 }
 
 h4, h5{
@@ -34,7 +39,7 @@ h4, h5{
 
 hr {
     border: 0; 
-    border-top: 1px solid #F7941D;
+    border-top: 1px solid #211E55;
 }
 
 .backpattern {
@@ -205,6 +210,7 @@ li {
 }
 
 
+
 .tileImg{
     width:calc(100% - 22px);
     height:calc(100% - 18px);
@@ -242,7 +248,7 @@ li {
 
 }
 
-.l3s1, .l2s1{
+.l3s1, .ll2s1, .lr2s1{
     display: inline-block;
 }
 
