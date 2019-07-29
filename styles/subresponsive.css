@@ -16,13 +16,13 @@
         padding:20px 10%;
 
         }
-    
+
     .secondtitleEn, .secondtitleCh {
         position:relative;
         transform-origin: 60%;
         width:80%;
         font-size:11pt;
-        padding:40px 65px;
+        padding:100px 65px;
     }
 
     .backImg{
@@ -56,12 +56,12 @@
         padding:20% 10% 15% 10%;
     }
     p.mainDescriptionEn {
-        padding:20px 20% 20px 30px;
+        padding:50px 20% 50px 30px;
 
     }
 
     p.mainDescriptionCh {
-        padding:10px 30px 0 20%;
+        padding:50px 30px 50px 20%;
 
     }
 
@@ -70,7 +70,7 @@
         transform-origin: 75%;
         width:70%;
         font-size:11pt;
-        padding:40px 80px;
+        padding:100px 80px;
     }
 
     .backImg{
@@ -100,20 +100,21 @@
         padding:25% 10% 15% 25%;
     }
     p.mainDescriptionEn {
-        padding:20px 40% 20px 30px;
+        padding:50px 40% 50px 30px;
 
     }
 
     p.mainDescriptionCh {
-        padding:10px 30px 10px 40%;
+        padding:50px 30px 50px 40%;
 
     }
         
     .secondtitleEn, .secondtitleCh {
+        position:relative;
         width:60%;
         transform-origin: 75%;
         max-width:720px;
-        padding:60px 80px;
+        padding:100px 80px;
         margin-left: 5px;
     }
 

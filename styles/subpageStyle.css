@@ -12,10 +12,8 @@
 }
 
 .toHomeLogo{
-    position: relative;
     width:70px;
     height: auto;
-    z-index: 100;
     background-color: rgba(255,255,255,0.6);
     border-radius: 35px;
 }
@@ -27,7 +25,7 @@
 
 .hamburger {
     position:fixed;
-    z-index: 10000;
+    z-index: 100;
     margin-top: 45px;
 }
 
@@ -58,31 +56,23 @@ a.catalogue:active{
     position: absolute;
 }
 
-.secondtitleEn, .secondtitleCh{
-    transform: rotate(-20deg);
-    /* Safari */
-    -webkit-transform: rotate(-20deg);
-
-    /* Firefox */
-    -moz-transform: rotate(-20deg);
-
-    /* IE */
-    -ms-transform: rotate(-20deg);
-
-    /* Opera */
-    -o-transform: rotate(-20deg);
+.cataList{
+    display: none; 
+    position: fixed; 
+    z-index: 1000;
 }
 
-.secondtitleEn{
-    background-color: rgba(33,30,85,0.6);
-    color: white;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-}
 .secondtitleCh{
     background-color: rgba(255,255,255,0.6);
     border-top: 1px solid #211E55;
     border-bottom: 1px solid #211E55;
+}
+.secondtitleEn{    
+    background-color: rgba(33,30,85,0.6);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: white;
+    z-index: 10;
 }
 
 .backImg{
@@ -94,7 +84,6 @@ a.catalogue:active{
 
 .divTitle:hover{
     color:#F596AA;
-
 }
 
 .divTitle:disabled:hover{
@@ -113,16 +102,21 @@ a.catalogue:active{
 
 
 .divTitle {
-    font-size:12pt;
+    display: inline-block;
+
+    font-size:10pt;
     letter-spacing: 0.1em;
     font-weight: 700;
     color: #D0104C;
-    margin-left: 30px;
+    padding:10px 20px;
+
 }
 
 .rowTitle{
+    position: relative;  
     width:100vw;
     padding: 30px 0;
+    margin-top: 20px;
     background: white; 
     text-align: center;
 }
@@ -131,7 +125,7 @@ a.catalogue:active{
     display:inline-block; 
 }
 
-
+.headTitle{margin-left: 20px;}
 .headTitle:before{
  background-color:#D0104C;
  content: "";
@@ -154,8 +148,33 @@ a.catalogue:active{
     z-index:10;
 }
 
+.mainDescriptionEn :before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    background-color:rgba(33,30,85,0.6);   
+    transform: rotate(-20deg);
+    /* Safari */
+    -webkit-transform: rotate(-20deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-20deg);
+
+    /* IE */
+    -ms-transform: rotate(-20deg);
+
+    /* Opera */
+    -o-transform: rotate(-20deg);
+}
+
 .mainDescriptionEn{
-    background-color:rgba(33,30,85,0.6);    
+    background-color:rgba(33,30,85,0.6);   
+    position:relative;
+    overflow: hidden;
     color:white;
 }
 
