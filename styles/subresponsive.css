@@ -8,7 +8,7 @@
     
     .projectdescription{          
         margin:10% 0 0 0;
-        padding: 10px 10px 10px 70px;
+        padding: 10px 25px 10px 70px;
     }
     
     p.mainDescriptionEn, p.mainDescriptionCh {
@@ -36,6 +36,12 @@
         margin-top: -5px;
     }
 
+    .projectvolume{
+        background-size: contain;
+        -webkit-background-size: contain;
+        -moz-background-size: contain; 
+        -o-background-size: contain;
+    }
 
 }
 
@@ -84,6 +90,14 @@
        margin-left: 5%; 
        margin-top: 0;
     }
+    
+    .projectvolume{
+        background-size: 80% auto;
+        -webkit-background-size: 80% auto;
+        -moz-background-size: 80% auto; 
+        -o-background-size: 80% auto;
+        background-position: 80% 50%;
+    }
 
 }
 
@@ -131,6 +145,14 @@
        rotate(-45deg); 
        margin-left: 20%; 
        margin-top: -10px;
+    }
+    
+    .projectvolume{
+        background-size: 70% auto;
+        -webkit-background-size: 70% auto;
+        -moz-background-size: 70% auto; 
+        -o-background-size: 70% auto;
+        background-position: 90% 50%;
     }
 
 }
