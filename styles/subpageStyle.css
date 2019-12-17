@@ -41,8 +41,9 @@
 a.catalogue:hover{
     background: rgb(250,250,250); 
     color: #F596AA;
-    cursor: pointer;
 }
+
+a:hover{cursor: pointer;}
 
 a.catalogue:active{
     background: rgba(33,30,85,0.6);
@@ -52,14 +53,25 @@ a.catalogue:active{
 
 .closePopup{
     width: 100vw;
-    height: calc(100vh - 20px);
-    position: absolute;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0,0,0,0.3);
+    left: 0;
+    right:0;
+    top:0;
+    bottom:0;
 }
 
 .cataList{
     display: none; 
-    position: fixed; 
+    position: absolute; 
     z-index: 1000;
+}
+
+.extPage{
+    display: none; 
+    position: absolute; 
+    z-index: 100000;
 }
 
 .secondtitleCh{
@@ -107,7 +119,7 @@ a.catalogue:active{
     letter-spacing: 0.1em;
     font-weight: 700;
     color: #D0104C;
-    padding:10px;
+    padding:10px 20px;
 
 }
 
@@ -124,7 +136,7 @@ a.catalogue:active{
     display:inline-block; 
 }
 
-.headTitle{margin-left: 20px;}
+.headTitle{margin-left: 70px;}
 .headTitle:before{
  background-color:#D0104C;
  content: "";
@@ -142,9 +154,35 @@ a.catalogue:active{
     z-index:-1;
 }
 
-.projectdescription{
-    position: absolute;
+.projectvolume{
+    background-repeat: no-repeat; 
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain; 
+    -o-background-size: contain;
+    background-color: #211E55;
+    width: inherit;
+    height: auto;
+    position: relative;
     z-index:10;
+    margin:10px 0px;
+}
+
+.projectvolume > img{
+    vertical-align: top;
+    width: 100%; /* max width */
+    opacity: 0;  /* make it transparent */
+}
+
+.projectvolume > div{
+    width:inherit;
+    position: absolute;
+    top: 0;
+}
+
+.projectdescription{
+    background-color: rgba(0,0,0,0.7);
+    width: 80%;
 }
 
 .mainDescriptionEn :before{
@@ -190,7 +228,15 @@ a.catalogue:active{
 }
 
 p.descriptionW, h2.descriptionW{
-    color:white;
+    margin:8px 0;
+}
+
+.descriptionBr{
+    position: relative;
+    z-index:10;
+}
+
+p.descriptionBr, h2.descriptionBr{
     margin:8px 0;
 }
 
@@ -202,7 +248,7 @@ h6.descriptionB{
     max-width: 600px;
     margin:0;
     background-color: rgba(250,250,250,0.95); 
-    position:absolute; 
+    position:fixed; 
     margin-top:45px; 
     margin-left: 38px; 
     box-shadow:5px 10px 18px #888888;
@@ -242,3 +288,67 @@ ul {
     background-size: cover;
     background-position: center;
 }
+
+.articleFrame{
+    width: 100%;
+    max-width: 960px;
+    height:98vh;
+    background-color:transparent; 
+    border-radius: 2px 0 0 2px;
+    position:fixed; 
+    margin-top: 1vh;
+    outline:none;
+    z-index: 10000;
+}
+
+.article{
+    width: 88%;
+    height:98vh;
+    outline: none;
+    border-radius: 2px 0 0 2px;
+    border: 0;
+    box-shadow:1px 1px 6px 2px #888888;
+}
+
+
+.closeButton{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position:absolute;
+    margin-top: 1vh;
+    margin-left:90%;
+    color: #D0104C;
+    background-color:rgba(255,255,255,1); 
+    font-size: 12pt;
+    z-index: 100000;
+    text-align: center;
+    box-shadow:0px 0px 6px 2px #DDDDDD;
+    }
+
+.closeButton:hover{
+    color: #F596AA; 
+}
+
+.topButton{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: calc(1vh + 40px);
+    margin-left:90%;
+    color: #D0104C;
+    background-color:rgba(255,255,255,1); 
+    font-size: 12pt;
+    z-index: 100000;
+    text-align: center;
+    box-shadow:0px 0px 6px 2px #DDDDDD;
+    }
+
+.topButton:hover{
+    color: #F596AA; 
+}
+
+
+hr.divider{border:none;
+    border-top: 1px solid #c0c0c0;}

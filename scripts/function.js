@@ -115,4 +115,17 @@ function changeUI(id,n){
     document.getElementById('btn' + id + n).setAttribute("disabled", true);
 
 }
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function topiFunction() {
+  document.article.scrollTop = 0; // For Safari
+  document.article.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
  
+function loadpage(id,pageurl) {
+    document.getElementById(id).src = pageurl;
+}

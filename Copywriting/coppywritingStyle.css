@@ -1,0 +1,137 @@
+html{min-width: 320px; min-height: 320px;  width:100vw; }
+
+body{min-width: 320px; min-height: 320px; margin:0; overflow-x: hidden;  width:100%; height:100%; background-color: white;}
+
+p, a, h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto','Noto Sans HK', 'Arial', sans-serif;
+    text-align: justify;
+    text-justify:inter-word;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+}
+
+h1{ background: #211E55;
+    color: white;
+    font-size: 16pt;
+    font-weight: 500;
+    margin: 0;
+    padding: 10px 20px;}
+
+h2{ color: darkcyan;
+    font-size: 12pt;
+    font-weight: 400;}
+
+h3{ color: darkcyan;
+    font-size: 12pt;
+    font-weight: 300;}
+
+h4{ color: #211E55;
+    font-size: 9pt;
+    font-weight: 500;}
+
+
+h5{ color:#563F2E;
+    font-size: 9pt;
+    font-weight: 300;
+    padding: 10px;
+    border-radius:3px;
+    background-color: #DDD23B;
+}
+
+h6{ color: #c0c0c0;
+    font-size: 9pt;
+    font-weight: 300;
+    text-align: center;
+    margin:5px;}
+
+
+p{ color: #333333;
+    font-size: 10pt;
+    font-weight: 300;}
+
+a { text-decoration: none;
+    font-size:10pt;
+    color:#D0104C;
+}
+
+a:hover {
+    color:#F596AA;
+}
+
+hr {border:none;
+    border-top: 1px solid #211E55;}
+
+hr.divider{border:none;
+    border-top: 1px solid #c0c0c0;}
+
+div.content {margin:20px;}
+
+.wide100 {
+    width:100%;
+    height: auto;
+}
+
+.wide90 {
+    width:90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius:4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(33,30,85,0.6);
+  border-radius:0 0 4px 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F596AA;
+}
+
+/*phone below639*/
+@media screen and (max-width:639px) {
+    .wide50 {
+        width:80%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*pad 640-959*/
+@media screen and (min-width:640px) and (max-width:959px) {
+    .wide50 {
+        width:65%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* 960up */
+@media screen and (min-width:960px){
+    .wide50 {
+        width:50%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,15 +1,14 @@
 /*phone below639*/
 @media screen and (max-width:639px) {
-    p.descriptionW{
-        font-size: 10pt;
-    }
+
     
     h2.descriptionW{
         font-size: 14pt;
     }
     
     .projectdescription{          
-        padding:20% 8% 15% 70px;
+        margin:10% 0 0 0;
+        padding: 10px 10px 10px 70px;
     }
     
     p.mainDescriptionEn, p.mainDescriptionCh {
@@ -21,7 +20,6 @@
         position:relative;
         transform-origin: 60%;
         width:80%;
-        font-size:11pt;
         padding:100px 65px;
     }
 
@@ -53,7 +51,8 @@
         font-size: 15pt;
     }
     .projectdescription{        
-        padding:20% 10% 15% 10%;
+        margin:20% 0 0 0;
+        padding: 10px 10px 10px 10%;
     }
     p.mainDescriptionEn {
         padding:50px 20% 50px 30px;
@@ -97,7 +96,8 @@
         font-size: 12pt;
     }
     .projectdescription{        
-        padding:25% 10% 15% 25%;
+        margin:23% 0 0 0;
+        padding:20px 20px 20px 25%;
     }
     p.mainDescriptionEn {
         padding:50px 40% 50px 30px;
