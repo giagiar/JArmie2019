@@ -153,7 +153,7 @@ hr {
     margin-left: -20px;
 }
 .maxWidth{
-    max-width: 960px;
+    max-width: 1200px;
     top:0;
     bottom:0;
     left:0;
@@ -299,7 +299,7 @@ li {
     margin:auto;
     overflow-x:hidden;
     -ms-text-size-adjust:100%;
-    -webkit-text-size-adjust:100%
+    -webkit-text-size-adjust:100%;
 }
 
 footer{

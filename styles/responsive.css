@@ -200,11 +200,12 @@
     }
     
     .longImg{
-        width:30%;
+        width:45%;
+        max-width:520px;
         height:calc(100vh * 0.4);
         margin-top:calc(100vh * 0.15);
         object-fit: cover;
-        
+        margin-left: 0;
     }
     
 
