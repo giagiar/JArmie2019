@@ -156,13 +156,13 @@ a.catalogue:active{
 
 .projectvolume{
     background-repeat: no-repeat; 
-    background-color:rgba(0,0,0,0.6);
+    background-color:rgba(221,210,59,0.6);
     width: inherit;
     height: auto;
     position: relative;
-    border: solid 1px #211E55;
+
     z-index:10;
-    margin:10px 0px;
+    margin:100px 0px;
 }
 
 .projectvolume > img{
