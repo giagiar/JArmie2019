@@ -1,17 +1,24 @@
+html{box-sizing:border-box; width:inherit; height:100%; overflow-y: scroll; -ms-overflow-style: none;-ms-overflow-style: none;}
+body{ width:inherit; height:100%; margin:0; overflow-y: scroll; -ms-overflow-style: none; background-color: rgba(255,255,255,0.8);
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+    
+}
+
 * {
   box-sizing: border-box;
 }
 
 /* Set a background color */
-body {
-  font-family:Verdana,sans-serif,"微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU";
-}
+
 
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  width:100%;
+  width:inherit;
   max-width: inherit;
   margin: 0 auto;
 }
@@ -21,7 +28,7 @@ body {
     width: 1px;
     height:inherit;
     position:absolute;
-    background-color: #5B646F;
+    background-color: #563F2E;
     left: 50%;
 }
 
@@ -41,9 +48,9 @@ body {
   position: absolute;
   width: 6px;
   height: 6px;
-  right: -3px;
-  background-color: white;
-  border: 1px solid #FF9F55;
+  right: -4px;
+  background-color:#F596AA;
+  border: 1px solid #D0104C;
   top: 28px;
   border-radius: 50%;
   z-index: 1;
@@ -66,8 +73,8 @@ body {
   width: 6px;
   height: 6px;
   right: -3px;
-  background-color: white;
-  border: 1px solid #FF9F55;
+  background-color:#F596AA;
+  border: 1px solid #D0104C;
   top: 28px;
   border-radius: 50%;
   z-index: 1;
@@ -93,9 +100,9 @@ body {
   width: 0;
   z-index: 1;
   right: 15px;
-  border: medium solid #7DB9DE;
+  border: medium solid rgba(33,30,85,0.6);
   border-width: 5px 0 5px 5px;
-  border-color: transparent transparent transparent #7DB9DE;
+  border-color: transparent transparent transparent rgba(33,30,85,0.6);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -107,14 +114,14 @@ body {
   width: 0;
   z-index: 1;
   left: 15px;
-  border: medium solid #FFE533;
+  border: 1px solid #C8C8C8;
   border-width: 5px 5px 5px 0;
-  border-color: transparent #FFE533 transparent transparent;
+  border-color: transparent #C8C8C8 transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
 .right::after {
-  left:-3px;
+  left:-4px;
 }
 
 /* The actual content */
@@ -145,16 +152,16 @@ body {
 /* Make sure that all arrows are pointing leftwards */
   .right::before{
     left: 45px;
-    border: medium solid #FFE533;
+    border: medium solid #DDD23B;
     border-width: 5px 5px 5px 0;
-    border-color: transparent #FFE533 transparent transparent;  
+    border-color: transparent #DDD23B transparent transparent;  
   }
       
 .left::before{
     left: 45px;
-    border: medium solid #7DB9DE;
+    border: medium solid rgba(33,30,85,0.6);
     border-width: 5px 5px 5px 0;
-    border-color: transparent #7DB9DE transparent transparent;
+    border-color: transparent rgba(33,30,85,0.6) transparent transparent;
     }
 /* Make sure all circles are at the same spot */
   .left::after, .right::after {
@@ -166,3 +173,68 @@ body {
     left: 0%;
   }
 }
+
+.CVtitleBlue {
+    color:white;
+    float:left;
+    margin-right: 0;
+    margin-bottom: -12px;
+}
+
+.CVdateBlue {
+    font-size: 12px;
+    color:#C8C8C8;
+    margin-bottom: -12px;
+}
+.CVsubtitleBlue {
+    font-size: 12px;
+    color:#E6E7E8;
+}
+
+.CVtitleYellow {
+    float:right;
+    text-align:right;
+    margin-right: 0;
+    margin-bottom: -12px;
+}
+
+.CVdateYellow {
+    font-size: 12px;
+    color:#DDD23B;
+    text-align: right;
+    margin-bottom: -12px;
+}
+
+.CVsubtitleYellow {
+    font-size: 12px;
+    color:#58595B;
+    text-align: right;
+    text-align: right;
+}
+
+.blue-back {
+    white-space: normal;
+    color:#fff;
+    background-color:rgba(33,30,85,0.6);  
+}
+
+.yellow-back {
+    white-space: normal;
+    color:#333132;
+    background-color:white;
+    border: solid 1px #C8C8C8;
+    
+}
+
+.col {
+
+    float:left;
+    width:100%;
+}
+
+div::after {
+    content:"";
+    display:table;
+    clear:both;
+}
+

@@ -1,113 +1,122 @@
 <!DOCTYPE html>
+
+<html lang="ja" >
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="JArmie,giagiar">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>TSAI giagiar | UIUX</title>
+  
+    <link rel="stylesheet" href="styles/giagiarStyle.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/subpageStyle.css">
+    <link rel="stylesheet" href="styles/subresponsive.css">
+    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="icon" href="mainImg/logo-05.png">
+    <link rel="shortcut icon" href="mainImg/logo-05.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="mainImg/logo.png">
+    <script src="scripts/function.js"></script>
+	
+</head>
 <html>
-<title>TSAI giagiar</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles/responsive.css">    
-<link rel="stylesheet" href="styles/giagiarStyle.css">
-<script src="scripts/function.js"></script>
-    
-<body onload="Load('life')">
-
-    
-<!-- index -->
-<div  class="divSideMargin hide-small">
-    <div class="col m4 l4 picBlock textcut" onmouseover="clearcolor('WHR' ,'WH')" onmouseout="blurcolor('WHR', 'WH')" >
-    <div class="scrollImg"><a href="Catalogue/WorkingHoliday.html" ><img src="mainImg/WorkingHoliday.jpg" class="roundImg" id="WHR">
-    <h1  class="shadowText">W</h1><h7>orking Holiday</h7></a></div>
-    </div>
-    
-    <div class="col m4 l4 picBlock textcut" onmouseover="clearcolor('HikeR', 'Hike')" onmouseout="blurcolor('HikeR', 'Hike')">
-    <div class="scrollImg"><a href="Catalogue/Hiking.html"><img src="mainImg/Hiking.jpg" class="roundImg" id="HikeR">
-    <h1  class="shadowText">H</h1><h7>iking</h7></a></div>
-    </div>
-    
-    <div class="col m4 l4 picBlock textcut" onmouseover="clearcolor('SetoR', 'Seto')" onmouseout="blurcolor('SetoR','Seto')">
-    <div class="scrollImg"><a href="Catalogue/SetouchiTriennale.html"><img src="mainImg/SetouchiTriennale.jpg" class="roundImg" id="SetoR">
-    <h1  class="shadowText">S</h1><h7>etouchi Triennale</h7></a></div>
-    </div>
-    
-    <div class="col m4 l4 picBlock textcut" onmouseover="clearcolor('ActR', 'Act')" onmouseout="blurcolor('ActR', 'Act')">
-    <div class="scrollImg"><a href="Catalogue/Activities.html"><img src="mainImg/Activities.jpg" class="roundImg" id="ActR">
-    <h1 class="shadowText">A</h1><h7>ctivities</h7></a></div>
-    </div>
-    
-</div>
-
-<!-- description -->
-    <div class="divTopMargin divSideMargin hide-small">
-
-        <div class="col m2 l4 picBlock" onmouseover="clearcolor('WHR' ,'WH')" onmouseout="blurcolor('WHR', 'WH')" >
-            <a href="Catalogue/WorkingHoliday.html" ><h6>打工度假</h6>
-            <h4>Working Holiday</h4><hr>
-            <div class="blue-back" id="WH">
-              <p class="textPadding">錯過了，會後悔嗎? 看似享受的旅行其實要面對更多現實的考驗，與其說是夢想，不如看做更濃縮的生活，那段時間能倒數，那人生呢?</p>
-            </div></a>
+<body  onload="changeUI('main','1');"> 
+<div class="maxWidth">
+    <div>
+        <div class="logohome" >
+            <a href="index.html"><img class="toHomeLogo" src="subImg/logohome.png"/></a>
+        </div> 
+        
+        <div id="extPage" class="extPage" style="display: none;">  
+            <div class="closePopup"  onclick="openWindow('extPage');"> </div>    
+            <div class="articleFrame" onclick="openWindow('extPage');">
+                <div class="closeButton"><a>&lt;</a></div>
+                <div class="topButton"  onclick="topiFunction();"><a>&there4;</a></div>
+                <iframe id="article" class="article"></iframe>
+            </div>   
         </div>
         
-       <div class="col m2 l4 picBlock" onmouseover="clearcolor('HikeR', 'Hike')" onmouseout="blurcolor('HikeR', 'Hike')">
-           <a href="Catalogue/Hiking.html"><h6>登山健行</h6>
-           <h4>Hiking</h4><hr>
-           <div class="blue-back" id="Hike">
-              <p class="textPadding">從台灣到國外又回到台灣，在不同緯度、不同海拔交互作用下呈現的景象與感知，行進中與身體的對話，真正走過，才能更認識一切。</p>
-            </div></a>
-        </div>  
-        
-        <div class="col m2 l4 picBlock" onmouseover="clearcolor('SetoR', 'Seto')" onmouseout="blurcolor('SetoR','Seto')">
-            <a href="Catalogue/SetouchiTriennale.html"><h6>瀨戶內海</h6>
-            <h4>Setouchi Triennale</h4><hr>
-            <div class="blue-back"  id="Seto">
-              <p class="textPadding">留停不可，那就離職吧。其實也不是任何時候都能這麼灑脫，趁機工作轉換，去看看一項藝術活動怎麼運作，怎麼帶動地方重現生機。</p>
-            </div></a>
+        <div class="hamburger"><p class="rotate"> <a class="catalogue" onclick="openWindow('cataList');"><span>@ life | </span><span style="font-size: 10pt;">menu</span></a></p>
         </div>
+             
+        <div id="cataList" class="cataList" style="display: none;">  
+        
+            <div class="closePopup" onclick="openWindow('cataList');"> </div>  
+        
+            <div class="extMenu">
+ 
+            <span class="ll2s1">
+                <ul class="ul-left"><a href=work.html><p><span class="title">JArmie </span><span>@ work</span></p></a>
+                    <a href="work-uiux.html">  <p class="extTitle">／　UI&UX Design</p>
+                    <p class="extSubtitle">從手機到投影機</p></a>
+                    <a href="work-website.html">   <p class="extTitle">／　Web Design</p>
+                    <p class="extSubtitle">自己的和別人的</p></a>
+                    <a href="work-architecture.html"> <p class="extTitle">／　Architecture </p></a>
+                    <p class="extSubtitle">看學生時期的我</p>
+                    <a href="work-copywriting.html"> <p class="extTitle">／　Copywriting </p>
+                    <p class="extSubtitle">拿起筆來寫寫字</p></a>
+                </ul> 
+            </span>
+
+            <span class="lr2s1">
+                <ul class="ul-right"><a href="life.html"><p><span class="title">giagiar  </span><span> @ life</span></p></a>
+                    
+                       <a href="life-setouchi.html"> <p class="extTitle">／　Setouchi Triennale</p>
+                        <p class="extSubtitle">當一個藝術祭志工</p></a>
+                       <a href="life-workingHoliday.html"> <p class="extTitle">／　Working Holiday in NZ</p>
+                        <p class="extSubtitle">十份工作七個換宿</p></a>
+                       <a href="life-hiking.html"> <p class="extTitle">／　Hiking</p>
+                        <p class="extSubtitle">上上下下徒步前進</p></a>
+                       <a href="life-photography.html"> <p class="extTitle">／　Photography</p>
+                        <p class="extSubtitle">沒有專業喜歡就好</p></a>
+                   </ul> 
+
+            </span></div>
+        </div>
+    </div>
+    
+    
+    <div class="rowTitle">
+            <button id="btnmain3" class="headTitle divTitle" onclick="window.location.href='experience.html';"> Experience </button>
+            <button id="btnmain2" class="divTitle" onclick="window.location.href='work.html';"> Work </button>
+            <button id="btnmain1" class="divTitle" onclick="changeUI('main','1');"> Life</button>
+    </div>
   
-        <div class="col m2 l4 picBlock" onmouseover="clearcolor('ActR', 'Act')" onmouseout="blurcolor('ActR', 'Act')">
-            <a href="Catalogue/Activities.html"><h6>各類活動</h6>
-            <h4>Activities</h4><hr>
-            <div class="blue-back"  id="Act">
-              <p class="textPadding">可以辦兩百人的國際工作坊，也可以有小小的展覽與分享會，打零工，參加社團活動，有心也許生活就熱鬧，沒有什麼辦不到的事。</p>
-            </div></a>
-    </div></div>
-
-<!-- phone -->
-    <div class="divSideMargin hide-medium hide-large">
-
-        <div class="col m2 l4 picBlock" onmouseover="clearcolor('WHRs' ,'WHs')" onmouseout="blurcolor('WHRs', 'WHs')" >
-        <a href="Catalogue/WorkingHoliday.html" >
-        <div class="scrollImg"><img src="mainImg/WorkingHoliday.jpg" class="roundImg" id="WHRs">
-            <h1 class="shadowText">W</h1><h7>orking Holiday</h7><h6>打工度假</h6><hr></div>
+    <div id="main1">    
         
-            <div class="blue-back" id="WHs">
-              <p class="textPadding">錯過了，會後悔嗎? 看似享受的旅行其實要面對更多現實的考驗，與其說是夢想，不如看做更濃縮的生活，那段時間能倒數，那人生呢?</p>
-            </div></a>
+        <div  class="backpattern">
+        
+        <div class=inmiddle>
+        <div class="col l2">
+            <div><a href="life-setouchi.html"> <div class="photo" >
+            <img src="mainImg/img_SetouchiTriennale.jpg"/>
+            </div></a></div>
         </div>
         
-       <div class="col m2 l4 picBlock" onmouseover="clearcolor('HikeRs', 'Hikes')" onmouseout="blurcolor('HikeRs', 'Hikes')">
-        <a href="Catalogue/Hiking.html"><hr>
-        <div class="scrollImg"><img src="mainImg/Hiking.jpg" class="roundImg" id="HikeRs">
-            <h1 class="shadowText">H</h1><h7>iking</h7><h6>登山健行</h6></div>    
-           <div class="blue-back" id="Hikes">
-              <p class="textPadding">從台灣到國外又回到台灣，不同緯度、不同海拔交互作用下呈現的景象與感知，行進中與身體的對話，真正走過，才能更認識一切。</p>
-            </div></a>
-        </div>  
-        
-        <div class="col m2 l4 picBlock" onmouseover="clearcolor('SetoRs', 'Setos')" onmouseout="blurcolor('SetoRs','Setos')">
-            <a href="Catalogue/SetouchiTriennale.html"><hr>
-            <div class="scrollImg"><img src="mainImg/SetouchiTriennale.jpg" class="roundImg" id="SetoRs">
-                <h1 class="shadowText">S</h1><h7>etouchi Triennale</h7><h6>瀨戶內海</h6></div>
-            <div class="blue-back"  id="Setos">
-              <p class="textPadding">留停不可，那就離職吧。其實也不是任何時候都能這麼灑脫，趁機工作轉換，去看看一項藝術活動怎麼運作，怎麼帶動地方重現生機。</p>
-            </div></a>
+        <div class="col l2">
+            <div><a href="life-workingHoliday.html"> <div class="photo" >
+            <img src="mainImg/WorkingHoliday.jpg"/>
+            </div></a></div>
         </div>
-  
-        <div class="col m2 l4 picBlock" onmouseover="clearcolor('ActRs', 'Acts')" onmouseout="blurcolor('ActRs', 'Acts')">
-            <a href="Catalogue/Activities.html"><hr>
-            <div class="scrollImg"><img src="mainImg/Activities.jpg" class="roundImg" id="ActRs">
-                <h1 class="shadowText">A</h1><h7>ctivities</h7><h6>各類活動</h6></div>
-            <div class="blue-back"  id="Acts">
-              <p class="textPadding">可以辦兩百人的國際工作坊，也可以有小小的展覽與分享會，打零工，參加社團活動，有心也許生活就熱鬧，沒有什麼辦不到的事。</p>
-            </div></a>
-        </div></div>
         
-    
+        <div class="col l2">
+            <div><a href="life-hiking.html"> <div class="photo" >
+            <img src="mainImg/img_Hiking.jpg"/>
+            </div></a></div>
+        </div>
+        
+        <div class="col l2">
+            <div><a href="life-photography.html"> <div class="photo" >
+            <img src="mainImg/Photography.jpg"/>
+            </div></a></div>
+        </div>
+        </div>
+        
+    </div>
+        
+    </div>
+    </div>
     </body>
 </html>

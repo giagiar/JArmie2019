@@ -1,0 +1,93 @@
+h4{font-size:20px;
+    color: #563F2E;}
+
+.divTopMargin {
+    padding:50px 0;
+
+}
+.divSideMargin {
+    margin-left:40px;
+    margin-right:8px;
+}
+
+.CVBlue {
+    padding-left: 20px;
+}
+.CVYellow {
+    padding-right: 20px;
+}
+
+.CVtitleBlue {
+    float:left;
+    margin-right: 0;
+    margin-bottom: -12px;
+}
+
+.CVdateBlue {
+    font-size: 12px;
+    color:#E6E7E8;
+    margin-bottom: -12px;
+}
+.CVsubtitleBlue {
+    font-size: 12px;
+    color:#333132;
+}
+
+.CVtitleYellow {
+    float:right;
+    text-align:right;
+    margin-right: 0;
+    margin-bottom: -12px;
+}
+
+.CVdateYellow {
+    font-size: 12px;
+    color:#58595B;
+    text-align: right;
+    margin-bottom: -12px;
+}
+
+.CVsubtitleYellow {
+    font-size: 12px;
+    color:#77787B;
+    text-align: right;
+    text-align: right;
+}
+
+.blue-back {
+    white-space: normal;
+    color:#fff;
+    background-color:#7DB9DE;
+}
+.blue-back-transparent {
+    position:absolute;
+    left:0;
+    top:0;
+    background-color:#7DB9DE;
+    opacity: 0.85;
+    color:#fff;
+    padding:8px 16px;
+}
+.yellow-back {
+    white-space: normal;
+    color:#333132;
+    background-color:#FFE533;
+    
+}
+.col {
+    float:left;
+    width:100%;
+}
+.textPadding {
+    padding:20px;
+}
+
+@media only screen and (min-width:601px){
+.col.l2{width:49.99999%}
+}
+
+@media only screen and (min-width:993px){
+.col.l13 {width:29.99999%} 
+.col.l23 {width:69.99999%}
+.col.l2 {width:49.99999%}
+}

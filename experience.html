@@ -1,64 +1,149 @@
 <!DOCTYPE html>
+
+<html lang="ja" >
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="JArmie,giagiar">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>TSAI giagiar | UIUX</title>
+  
+    <link rel="stylesheet" href="styles/giagiarStyle.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/subpageStyle.css">
+    <link rel="stylesheet" href="styles/subresponsive.css">
+    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="icon" href="mainImg/logo-05.png">
+    <link rel="shortcut icon" href="mainImg/logo-05.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="mainImg/logo.png">
+    <script src="scripts/function.js"></script>
+	
+</head>
 <html>
-<title>TSAI giagiar</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles/responsive.css">    
-<link rel="stylesheet" href="styles/giagiarStyle.css">
-<script src="scripts/function.js"></script>
-    
-<body onload="Load('exp');">
-<div  class="divSideMargin divTopMargin ">
-  <h4>EXPERIENCES 歷 年</h4><hr>
-    <div class="divSideMargin " style="background-color: #FCFAF2;"><iframe frameborder="0" src=timeline.html style="height:350px; width:100%;"></iframe></div>
-    
-</div>
+<body  onload="changeUI('main','3');"> 
+<div class="maxWidth">
+    <div>
+        <div class="logohome" >
+            <a href="index.html"><img class="toHomeLogo" src="subImg/logohome.png"/></a>
+        </div> 
+        
+        <div id="extPage" class="extPage" style="display: none;">  
+            <div class="closePopup"  onclick="openWindow('extPage');"> </div>    
+            <div class="articleFrame" onclick="openWindow('extPage');">
+                <div class="closeButton"><a>&lt;</a></div>
+                <div class="topButton"  onclick="topiFunction();"><a>&there4;</a></div>
+                <iframe id="article" class="article"></iframe>
+            </div>   
+        </div>
+        
+        <div class="hamburger"><p class="rotate"> <a class="catalogue" onclick="openWindow('cataList');"><span>@ experience  </span><span style="font-size: 10pt;"</span></a></p>
+        </div>
+             
+        <div id="cataList" class="cataList" style="display: none;">  
+        
+            <div class="closePopup" onclick="openWindow('cataList');"> </div>  
+        
+            <div class="extMenu">
+ 
+            <span class="ll2s1">
+                <ul class="ul-left"><a href=work.html><p><span class="title">JArmie </span><span>@ work</span></p></a>
+                    <a href="work-uiux.html">  <p class="extTitle">／　UI&UX Design</p>
+                    <p class="extSubtitle">從手機到投影機</p></a>
+                    <a href="work-website.html">   <p class="extTitle">／　Web Design</p>
+                    <p class="extSubtitle">自己的和別人的</p></a>
+                    <a href="work-architecture.html"> <p class="extTitle">／　Architecture </p></a>
+                    <p class="extSubtitle">看學生時期的我</p>
+                    <a href="work-copywriting.html"> <p class="extTitle">／　Copywriting </p>
+                    <p class="extSubtitle">拿起筆來寫寫字</p></a>
+                </ul> 
+            </span>
 
-<div  class="divTopMargin divSideMargin">
-  <h4>EDUCATION 學 歷</h4><hr>
-  <div class="divSideMargin  halfBG"  style="height:100%;">
+            <span class="lr2s1">
+                <ul class="ul-right"><a href="life.html"><p><span class="title">giagiar  </span><span> @ life</span></p></a>
+                    
+                       <a href="life-setouchi.html"> <p class="extTitle">／　Setouchi Triennale</p>
+                        <p class="extSubtitle">當一個藝術祭志工</p></a>
+                       <a href="life-workingHoliday.html"> <p class="extTitle">／　Working Holiday in NZ</p>
+                        <p class="extSubtitle">十份工作七個換宿</p></a>
+                       <a href="life-hiking.html"> <p class="extTitle">／　Hiking</p>
+                        <p class="extSubtitle">上上下下徒步前進</p></a>
+                       <a href="life-photography.html"> <p class="extTitle">／　Photography</p>
+                        <p class="extSubtitle">沒有專業喜歡就好</p></a>
+                   </ul> 
 
-      <div class="col l2 blue-back CVBlue" >          
-           <p class="CVtitleBlue col l23"> Computer Information Science, NCTU</p>
-          <p class="CVtitleBlue col l13">  交通大學資訊科學系</p>
-                
-          <div class="col l13" ><p class="CVdateBlue"> 200109-200506</p></div> 
-          <div class="col l23" ><p class="CVsubtitleBlue">Bachelor Degree 學士
-              </p></div>
-      </div>
-      
-      <div class="col l2 yellow-back CVYellow">
+            </span></div>
+        </div>
+    </div>
+    
+    
+    <div class="rowTitle">
+            <button id="btnmain3" class="headTitle divTitle" onclick="changeUI('main','3');"> Experience </button>
+            <button id="btnmain2" class="divTitle" onclick="window.location.href='work.html';"> Work </button>
+            <button id="btnmain1" class="divTitle" onclick="window.location.href='life.html';"> Life</button>
+    </div>
+  
+    <div id="main3">
+        <div  class="backpattern">
+            
+        <div >
+          <h4 class="divSideMargin">EXPERIENCES 歷 年</h4><hr>
+            <div class="divSideMargin divTopMargin"><iframe frameborder="0" src=timeline.html style="height:450px; width:100%;"></iframe></div>
+        </div>
+
+        <div  class="divTopMargin">
+          <h4 class="divSideMargin">EDUCATION 學 歷</h4><hr>
+          <div  style="height:100%;">
+
+              <div class=" divSideMargin">
+              <div>          
+                   <p class="mainDescriptionEn"> Computer Information Science, NCTU<br><br>交通大學資訊科學系<br><br>200109-200506<br><br>Bachelor Degree 學士</p>
+              </div>
+
+              <div>
+                  <p class="mainDescriptionCh CVtitleYellow "> Graduate Institute of Architecture, NCTU<br><br>交通大學建築研究所<br><br>200509-200909<br><br>Master Degree 碩士
+                  </p>
+              </div>
+              </div>
+
+            </div>
+        </div>
+
+        <div  class="inmiddle divTopMargin ">
+          <h4 class="divSideMargin">ME 我。</h4><hr>
           
-          <p class="CVtitleYellow  col l23"> Graduate Institute of Architecture, NCTU</p>
-          <p class="CVtitleYellow  col l13"> 交通大學建築研究所</p>
-          <div class="col l13" ><p class="CVdateYellow"> 200509-200909</p> </div>
-          <div class="col l23" ><p class="CVsubtitleYellow">Master Degree 碩士</p></div> 
-      </div>
-      
-    </div>
-</div>
+          <div class="divSideMargin"> 
+                  <p class="mainDescriptionEn">AB型的女生理性中包覆著感性，有著左撇子的思維模式與處女座莫名的堅持，造成人生的多變，卻又似乎遵循著鮮明的方向。大學畢業，帶著資訊科學的邏輯訓練一腳踏入建築設計的領域，研究所畢業，又帶著設計的底子進入科技業，職稱是高級工程師，分配到產品企劃的部門過，卻做著介面設計的工作，貌似沒有好好的定位過。<br><br>
+                  ／Multi-field study in both computer science and architectural design.<br><br>
+                  ／Familiar with android user interface and web design.<br><br>
+                  ／Love things related to Nature and culture.
+                  </p>
+
+           
+              
+                    <p class="mainDescriptionCh">2008-09年在瑞典的交換學生首次接觸了沙發衝浪，經過一學期的課程，辦了休學，用沙發衝浪的方式跑遍歐洲，紮實地體驗處處是朋友的感受，與在地人交換視角認識每一座城市，回台後在沙發衝浪的聚會上分享了農場換宿的經歷。<br><br>
+
+                    2013-14年到紐西蘭打工渡假，多批的訪客與季節性工作為履歷上增添了10份工+7個換宿，希望在美景與旅行外大家能看到打工渡假背後不一樣的一面，因此工作成了攝影展與分享會的主題。<br><br>
+
+                    2016年在瀨戶內國際藝術祭擔任作品製作的志工，在各種遊歷下還是保有基本技能，練習寫網頁，接觸APP的設計，希望能夠讓所學與興趣結合而發揮做出好成果。 
+                    </p>
+                </div>  
+              
+               </div>
+    </div></div></div>
     
-<div  class="divTopMargin divSideMargin">
-  <h4>ME 我。</h4><hr>
-  <div class="divSideMargin  halfBG"  style="height:100%;">
-      <div class="col l2 blue-back" >
-          <p class="textPadding"> AB型的女生理性中包覆著感性，有著左撇子的思維模式與處女座莫名的堅持，造成人生的多變，卻又似乎遵循著鮮明的方向。大學畢業，帶著資訊科學的邏輯訓練一腳踏入建築設計的領域，研究所畢業，又帶著設計的底子進入科技業，職稱是高級工程師，分配到產品企劃的部門過，卻做著介面設計的工作，貌似沒有好好的定位過。<br><br>
-          ／Multi-field study in both computer science and architectural design.<br><br>
-          ／Familiar with android user interface and web design.<br><br>
-          ／Love things related to Nature and culture.
-          </p>
-
-      </div>
-      <div class="col l2 yellow-back">
-
-            <p class="textPadding">2008-09年在瑞典的交換學生首次接觸了沙發衝浪，經過一學期的課程，辦了休學，用沙發衝浪的方式跑遍歐洲，紮實地體驗處處是朋友的感受，與在地人交換視角認識每一座城市，回台後在沙發衝浪的聚會上分享了農場換宿的經歷。<br><br>
-                
-            2013-14年到紐西蘭打工渡假，多批的訪客與季節性工作為履歷上增添了10份工+7個換宿，希望在美景與旅行外大家能看到打工渡假背後不一樣的一面，因此工作成了攝影展與分享會的主題。<br><br>
-
-            2016年在瀨戶內國際藝術祭擔任作品製作的志工，在各種遊歷下還是保有基本技能，練習寫網頁，接觸APP的設計，希望能夠讓所學與興趣結合而發揮做出好成果。 
-            </p>
-
-      </div>
+<footer>
+    <div class="goRight">
+        <h5 style="padding-top: 10px;">© JArmie／giagiar | 2019</h5>
+        <div class="footer-info">
+            <a href="mailto:giagiar.x@gmail.com" target="_blank" title="Mail JArmie"><img style="width:30px; margin-right: 10px;" src="mainImg/email.png" alt="Mail JArmie"></a>
+            <a href="https://www.facebook.com/giagiar" target="_blank" title="Facebook"><img style="width:30px; margin-right: 10px;" src="mainImg/fb.png" alt="Facebook"></a>
+            <a href="https://www.couchsurfing.com/people/giagiar" target="_blank" title="Couchsurfing"><img style="width:30px; margin-right: 10px;" src="mainImg/cs.png" alt="Couchsurfing"></a>
+            <a onclick="topFunction();" title="to top"><img style="width:30px;" src="mainImg/totop.png"></a>
+        </div>
     </div>
-</div>
+</footer>
+    
     </body>
 </html>
