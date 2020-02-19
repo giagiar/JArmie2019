@@ -47,6 +47,11 @@
         margin: 20px 0;
         width:100%; /* max width */
     }
+    
+    .folder > a > img{
+        margin: 20px 0;
+        width:100%; /* max width */
+    }
 
 }
 
@@ -105,8 +110,13 @@
     }
     
     .photo > img{
-        margin: 20px 0.8%;
-        width:48%; /* max width */
+        margin: 20px 1.33%;
+        width:47%; /* max width */
+    }
+    
+    .folder > a > img{
+        margin: 20px 0.7%;
+        width:47%; /* max width */
     }
 
 }
@@ -166,6 +176,11 @@
     }
 
     .photo > img{
+        margin: 20px 2.39%;
+        width:45%;
+    }
+    
+    .folder > a > img{
         margin: 20px 1%;
         width:31.12%;
     }

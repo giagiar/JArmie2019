@@ -7,7 +7,7 @@
     z-index: 100000;
 }
 
-#com1, #com2, #com3{
+#com1, #com2, #com3, #Write1, #Write2, #Write3{
     display: none;
 }
 
@@ -177,7 +177,6 @@ a.catalogue:active{
 .photo  {  
     width: inherit;
     height: auto;
-    margin:10px;
     position: relative;
     z-index:10;
 }
@@ -185,7 +184,20 @@ a.catalogue:active{
 .photo > img{
     display: inline-block;
     border: 1px solid #C8C8C8;
-    border-radius: 2px;
+    border-radius: 3px;
+}
+
+.folder {
+    display: inline-block;
+    width: inherit;
+    height: auto;
+    position: relative;
+    z-index:10;
+}
+
+.folder > a > img{
+    border: 1px solid #D0104C;
+    border-radius: 3px;
 }
 
 .projectvolume > div{
