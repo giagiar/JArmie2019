@@ -103,7 +103,7 @@ div.content {margin:20px;}
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(33,30,85,0.6);
-  border-radius:0 0 4px 4px;
+  border-radius:4px;
 }
 
 /* Handle on hover */

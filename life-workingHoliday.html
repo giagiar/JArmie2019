@@ -85,7 +85,8 @@
                 <p class="mainDescriptionCh">打工救生活</p>
                 </div></div>
                 
-                <div style="padding:100px;">UNDER CONSTRUCTION</div>
+                <!-- add photos here -->
+                <div id="slides" class="photo"> </div>
                 
         </div></div>
     </div>
@@ -103,5 +104,33 @@
     </div>
 </footer>
 
+    
+<script>
+    const section = document.getElementById("slides");
+
+    let requestURL = 'JSON/workingHoliday.json';
+    let request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+
+    request.onload = function() {
+      const imageSequance = request.response;
+      showImage(imageSequance);
+    }
+
+    function showImage(jsonObj) {
+      const pages = jsonObj['slide'];
+
+      for(let i = 0; i < pages.length; i++) {
+        const myppt = document.createElement('img');
+        myppt.src = pages[i].src;
+          
+        section.appendChild(myppt);
+      }
+    }
+
+</script>
+    
 </body>
 </html>

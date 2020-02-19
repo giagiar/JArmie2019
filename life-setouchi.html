@@ -18,11 +18,11 @@
     <link rel="shortcut icon" href="mainImg/logo-05.png">
     <link rel="apple-touch-icon" sizes="180x180" href="mainImg/logo.png">
     <script src="scripts/function.js"></script>
-    
-    
+
 </head>
+    
 <html >
-<body onload="changeUI('volunteer','1');"> 
+<body onload="changeUI('volunteer','1'); "> 
 <div class="maxWidth">
     <div>
         <div class="logohome" >
@@ -73,7 +73,7 @@
     <div  class="backpattern">
         
         <div class="rowTitle">
-            <button id="btnvolunteer1" class="headTitle divTitle" onclick="changeUI('volunteer','1');">Setouchi Triennale</button>
+            <button id="btnvolunteer1" class="headTitle divTitle" onclick="changeUI('volunteer','1');">Art Installation</button>
                     </div>
   
         <div id="volunteer">              
@@ -83,13 +83,15 @@
                 <p class="mainDescriptionEn">Be a volunteer.</p>
                 <p class="mainDescriptionCh">把自己放到日本的海邊一個月，看看整個瀨戶內國際藝術祭的建構過程，完整參與一個作品的製作，並當起在地志工，成為小蝦隊的成員去走訪不同作品，也更加了解整個藝術祭背後的運作方式。</p>
                 </div></div>
-                
-                <div style="padding:100px;">UNDER CONSTRUCTION</div>
-                
-        </div></div>
+
+                <!-- add photos here -->
+                <div id="slides" class="photo"> </div>
+            </div>
+    
+        </div> 
     </div>
 </div>    
-    
+
 <footer>
     <div class="goRight">
         <h5 style="padding-top: 10px;">© JArmie／giagiar | 2019</h5>
@@ -101,6 +103,33 @@
         </div>
     </div>
 </footer>
+    
+<script>
+    const section = document.getElementById("slides");
 
+    let requestURL = 'JSON/setouchi.json';
+    let request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+
+    request.onload = function() {
+      const imageSequance = request.response;
+      showImage(imageSequance);
+    }
+
+    function showImage(jsonObj) {
+      const pages = jsonObj['slide'];
+
+      for(let i = 0; i < pages.length; i++) {
+        const myppt = document.createElement('img');
+        myppt.src = pages[i].src;
+          
+        section.appendChild(myppt);
+      }
+    }
+
+</script>
+    
 </body>
 </html>
