@@ -78,14 +78,12 @@ function Load(Tab){
 }
 
 
-function clearcolor(x, y){
-    document.getElementById(x).style.opacity=1.0;
-    document.getElementById(y).className='yellow-back';
+function clearcolor(x){
+    document.getElementById(x).className='folderF';
 }
 
-function blurcolor(x, y){
-    document.getElementById(x).style.opacity=0.7;
-    document.getElementById(y).className='blue-back';
+function blurcolor(x){
+    document.getElementById(x).className='folder';
 }
 
 

@@ -1,11 +1,6 @@
 @font-face{
-    font-family:'Roboto','Noto Sans HK', 'Arial', sans-serif;
-    src: url('https://fonts.googleapis.com/css?family=Noto+Sans+HK|Roboto&display=swap')
-}
-
-@font-face{
-    font-family:'Roboto','Noto Sans HK', 'Arial', sans-serif;
-    src: url('https://fonts.googleapis.com/css?family=Noto+Sans+HK|Roboto&display=swap')
+    font-family:'Roboto','Noto Sans TC', 'Arial', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap')
     unicode-range: U+4E00-9FFF;
 }
 
@@ -33,6 +28,12 @@ button{
 
 p { color:#563F2E;   
     font-size: 11pt;
+}
+
+h3 {
+    color:#DDD23B;   
+    font-size: 14pt;
+    font-weight: 500;
 }
 
 

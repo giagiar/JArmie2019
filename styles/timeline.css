@@ -152,9 +152,9 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 /* Make sure that all arrows are pointing leftwards */
   .right::before{
     left: 45px;
-    border: medium solid #DDD23B;
+    border: medium solid #C8C8C8;
     border-width: 5px 5px 5px 0;
-    border-color: transparent #DDD23B transparent transparent;  
+    border-color: transparent #C8C8C8 transparent transparent;  
   }
       
 .left::before{

@@ -7,7 +7,7 @@
     z-index: 100000;
 }
 
-#com1, #com2, #com3, #Write1, #Write2, #Write3{
+#com1, #com2, #com3, #Write1, #Write2, #Write3, #photography1, #photography2, #photography3 {
     display: none;
 }
 
@@ -126,14 +126,18 @@ a.catalogue:active{
 .rowTitle{
     position: relative;  
     width:100vw;
-    padding: 30px 0;
-    background: white; 
+    padding: 20px 0 10px 0;
     text-align: center;
     overflow-x: auto;
+    z-index: 100;
 }
 
 .rowTitle span{
     display:inline-block; 
+}
+
+.space-10{
+    height:10px;
 }
 
 .headTitle{margin-left: 70px;}
@@ -188,16 +192,64 @@ a.catalogue:active{
 }
 
 .folder {
-    display: inline-block;
-    width: inherit;
+    float:left;
+    width:100%;
+    max-width: 1200px;
     height: auto;
+    margin-bottom: 50px;
     position: relative;
     z-index:10;
 }
 
+.folderF {
+    float:left;
+    width:100%;
+    max-width: 1200px;
+    height: auto;
+    margin-bottom: 50px;
+    position: relative;
+    z-index:10;
+}
+
+.folder > h3{
+    width: 84%;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.folderF > h3{
+    width: 84%;
+    margin: auto;
+    margin-bottom: 12px;
+    color:#211E55;
+}
+
+.folder > p{
+    width: 80%;
+    padding-left: 2%;
+    margin: auto;
+    border-left: 3px solid #DDD23B;
+}
+
+.folderF > p{
+    width: 80%;
+    padding-left: 2%;
+    margin: auto;
+    border-left: 3px solid #211E55;
+}
+
 .folder > a > img{
-    border: 1px solid #D0104C;
-    border-radius: 3px;
+    opacity:0.7;
+    border-radius: 20% 10px 3px 10px;
+}
+
+.folderF > a > img{
+    opacity:1.0;
+    border-radius: 20% 10px 3px 10px;
+}
+
+.width80{
+    width:inherit;
 }
 
 .projectvolume > div{
