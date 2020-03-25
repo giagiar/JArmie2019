@@ -48,20 +48,12 @@
         width:100%; /* max width */
     }
     
-    .folder{
+    .folder, .folderF{
         width:100%; /* max width */
     }
-    .folder > a > img{
-        width:100%;
-        margin: 25px 0;
-    }
-    
-    .folderF{
-        width:100%; /* max width */
-    }
-    .folderF > a > img{
-        width:100%;
-        margin: 25px 0;
+    .folder > a > img, .folderF > a > img{
+        width:85%;
+        margin: 25px 8%;
     }
 
 }
@@ -125,20 +117,11 @@
         width:47%; /* max width */
     }
     
-    .folder{
+    .folder, .folderF{
         width:49.99999%; /* max width */
     }
     
-    .folder > a > img{
-        width:90%;
-        margin: 25px 5%;    
-    }
-    
-    .folderF{
-        width:49.99999%; /* max width */
-    }
-    
-    .folderF > a > img{
+    .folder > a > img, .folderF > a > img{
         width:90%;
         margin: 25px 5%;    
     }
@@ -204,21 +187,29 @@
         width:45%;
     }
     
-    .folder{
+    .folder, .folderF{
         width:24.99999%;
+    }
+    
+    .folder > a > img, .folderF > a > img{
+        width:90%;
+        margin: 25px 5%; 
     }
     
     .folder > a > img{
-        width:90%;
-        margin: 25px 5%;    
-    }
-    
-    .folderF{
-        width:24.99999%;
+        opacity:0.75;
     }
     
     .folderF > a > img{
-        width:90%;
-        margin: 25px 5%;    
+        opacity:1.0;
     }
+    
+    .folder > h3 {
+        color: #DDD23B;
+    }
+       
+    .folder > p{
+        border-left: 3px solid #DDD23B;
+    }
+
 }
