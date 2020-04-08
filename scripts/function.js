@@ -127,3 +127,13 @@ function topiFunction() {
 function loadpage(id,pageurl) {
     document.getElementById(id).src = pageurl;
 }
+
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    document.getElementById('floatingbutton').style.display = "block";
+  } else {
+    document.getElementById('floatingbutton').style.display = "none";
+  }
+}
+

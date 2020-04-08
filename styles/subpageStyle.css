@@ -199,14 +199,14 @@ a.catalogue:active{
     z-index:10;
 }
 
-.folder > h3, .folderF > h3{
+.folder > a > h3, .folderF > a > h3{
     width: 84%;
     margin: auto;
     margin-bottom: 12px;
 }
 
 
-.folder > p, .folderF > p{
+.folder > a > p, .folderF > a > p{
     width: 80%;
     padding-left: 2%;
     margin: auto;
