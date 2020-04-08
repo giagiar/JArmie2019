@@ -169,10 +169,8 @@ a.catalogue:active{
 }
 
 
-
 .projectvolume > img{
     vertical-align: top;
-    width: 100%; /* max width */
     opacity: 0;  /* make it transparent */
 }
 
@@ -294,8 +292,12 @@ p.descriptionW, h2.descriptionW{
     z-index:10;
 }
 
-p.descriptionBr, h2.descriptionBr{
+p.descriptionBr, h2.descriptionBr, h2.descriptionSymbol{
     margin:8px 0;
+}
+
+h2.descriptionSymbol::first-letter { 
+    margin-left: -10px;
 }
 
 h6.descriptionB{

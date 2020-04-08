@@ -7,7 +7,7 @@
     }
     
     .projectdescription{          
-        margin:10% 0 0 0;
+        margin:8% 0 0 0;
         padding: 10px 25px 10px 70px;
     }
     
@@ -42,6 +42,9 @@
         -moz-background-size: contain; 
         -o-background-size: contain;
     }
+    .projectvolume > img{
+        width: 100%; 
+    }
     
     .photo > img{
         margin: 20px 0;
@@ -70,7 +73,7 @@
         font-size: 15pt;
     }
     .projectdescription{        
-        margin:20% 20px 0 0;
+        margin:10% 20px 0 0;
         padding: 10px 20px 10px 10%;
     }
     p.mainDescriptionEn {
@@ -111,6 +114,9 @@
         -o-background-size: 80% auto;
         background-position: 80% 50%;
     }
+    .projectvolume > img{
+        width: 80%; 
+    }
     
     .photo > img{
         margin: 20px 1.33%;
@@ -137,7 +143,7 @@
         font-size: 12pt;
     }
     .projectdescription{        
-        margin:23% 20px 0 0;
+        margin:12% 20px 0 0;
         padding:20px 20px 20px 20%;
     }
     p.mainDescriptionEn {
@@ -180,6 +186,10 @@
         -moz-background-size: 70% auto; 
         -o-background-size: 70% auto;
         background-position: 90% 50%;
+    }
+    
+    .projectvolume > img{
+        width: 70%; 
     }
 
     .photo > img{
