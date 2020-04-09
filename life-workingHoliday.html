@@ -23,6 +23,9 @@
 </head>
 <html >
 <body onload="changeUI('volunteer','1');"> 
+<script>window.onscroll = function() {scrollFunction()};</script>
+<div id="floatingbutton" class="floatingbutton" > <a onclick="topFunction();" title="to top"><img  src="mainImg/totopbutton.png"/></a></div>
+    
 <div class="maxWidth">
     <div>
         <div class="logohome" >
@@ -67,16 +70,14 @@
             </span></div>
         </div>
     </div>
-    
-    
-   
-    <div  class="backpattern">
         
          
         <div class="rowTitle">
             <button id="btnvolunteer1" class="headTitle divTitle" onclick="changeUI('volunteer','1');">Working Holiday</button>
-                    </div>
-  
+        </div>
+    
+      <div  class="backpattern"><div class="space-10"></div>
+          
         <div id="volunteer">              
             <div id="volunteer1"  class="volunteer">
             
@@ -105,32 +106,8 @@
 </footer>
 
     
-<script>
-    const section = document.getElementById("slides");
-
-    let requestURL = 'JSON/workingHoliday.json';
-    let request = new XMLHttpRequest();
-    request.open('GET', requestURL);
-    request.responseType = 'json';
-    request.send();
-
-    request.onload = function() {
-      const imageSequance = request.response;
-      showImage(imageSequance);
-    }
-
-    function showImage(jsonObj) {
-      const pages = jsonObj['slide'];
-
-      for(let i = 0; i < pages.length; i++) {
-        const myppt = document.createElement('img');
-        myppt.src = pages[i].src;
-          
-        section.appendChild(myppt);
-      }
-    }
-
-</script>
+<input type="text" id="json" value="JSON/workingHoliday.json" style="display: none;">
+<script src="scripts/loadImage.js"></script>
     
 </body>
 </html>
