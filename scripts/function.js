@@ -115,13 +115,26 @@ function changeUI(id,n){
 }
 
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+ //   document.body.scrollTop = 0; // For Safari
+//    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    const scrollHeight = window.scrollY,
+          scrollStep = Math.PI / ( 20 ),
+          cosParameter = scrollHeight / 2;
+    var   scrollCount = 0,
+          scrollMargin,
+          scrollInterval = setInterval( function() {
+            if ( window.scrollY != 0 ) {
+                scrollCount = scrollCount + 1;  
+                scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep);
+                window.scrollTo( 0, ( scrollHeight - scrollMargin ) );
+            } 
+            else clearInterval(scrollInterval); 
+        }, 15 );
 }
 
 function topiFunction() {
-  document.article.scrollTop = 0; // For Safari
-  document.article.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.article.scrollTop = 0; // For Safari
+    document.article.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
  
 function loadpage(id,pageurl) {
