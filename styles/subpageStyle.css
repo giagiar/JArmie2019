@@ -190,13 +190,14 @@ a.catalogue:active{
 }
 
 .folder, .folderF {
-    float:left;
+    display:inline-block;
     width:100%;
     max-width: 1200px;
     height: auto;
     margin-bottom: 50px;
     position: relative;
     z-index:10;
+    vertical-align:top;
 }
 
 .folder > a > h3, .folderF > a > h3{

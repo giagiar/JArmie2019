@@ -124,7 +124,7 @@
     }
     
     .folder, .folderF{
-        width:49.99999%; /* max width */
+        width:49.5%; /* max width */
     }
     
     .folder > a > img, .folderF > a > img{
@@ -198,7 +198,7 @@
     }
     
     .folder, .folderF{
-        width:24.99999%;
+        width:24.5%;
     }
     
     .folder > a > img, .folderF > a > img{
