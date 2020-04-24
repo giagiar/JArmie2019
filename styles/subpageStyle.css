@@ -203,6 +203,14 @@ a.catalogue:active{
 .folder > a > h3, .folderF > a > h3{
     width: 84%;
     margin: auto;
+
+}
+.folder > a > h4, .folderF > a > h4{
+    width: 84%;
+    margin: auto;
+    color: #C8C8C8;
+    font-size:14pt;
+    margin-left: 45px;
     margin-bottom: 12px;
 }
 
