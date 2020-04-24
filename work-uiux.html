@@ -21,7 +21,7 @@
 	
 </head>
 <html >
-<body onload="changeUI('com','4');"> 
+<body onload="changeUI('com','4'); topFunction();"> 
 <script>window.onscroll = function() {scrollFunction()};</script>
 <div id="floatingbutton" class="floatingbutton" > <a onclick="topFunction();" title="to top"><img  src="mainImg/totopbutton.png"/></a></div>
     
@@ -33,10 +33,9 @@
         
         <div id="extPage" class="extPage" style="display: none;">  
             <div class="closePopup"  onclick="openWindow('extPage');"> </div> 
-            <div class="articleFrame" onclick="openWindow('extPage');">
-                
+            <div class="articleFrame" >
                 <div class="closeButton"><a onclick="openWindow('extPage');">&lt;</a></div>
-                <div class="topButton" ><a  onclick="topiFunction();">&there4;</a></div>
+                <div class="topButton"><a onclick="topiFunction();">&there4;</a></div>
                 <iframe id="article" class="article"></iframe>
             </div>   
         </div>
