@@ -16,7 +16,7 @@ html, body,p, a, h1, h2, h3, h4, h5, h6{
     letter-spacing: 0.1em;
 }
 
-.logo, .mark, .top-img, .mylife, .index, .squareTile, .longImg, .squareTileR, .titleText {
+.logo, .mark, .top-img, .mylife, .index, .longImg, .titleText {
     position: absolute;
 }
 
@@ -189,8 +189,8 @@ hr {
 }
 
 
-.squareTile, .squareTileR, .longImg{
-    z-index: 100;
+.longImg{
+    z-index: 10;
     border-radius: 10px;
 }
 
@@ -212,7 +212,7 @@ hr {
     margin-top:10px;
 }
 
-.yellowback, .yellowbackL{
+.yellowback{
     background-image:url(../mainImg/texture.png); 
     background-repeat: repeat;
     background-color: #DDD23B;
@@ -288,15 +288,6 @@ li {
     padding-top: 100%;
     position: relative;
 }
-.square{
-    width: inherit;
-    height:inherit;
-	position:  absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-}
 
 .inmiddle{
     width:100vw;
@@ -359,7 +350,7 @@ footer{
     bottom:0;
     opacity: 50%;
     margin:0 25px 120px 0;
-    z-index:1000000;
+    z-index:1000;
 }
 
 .floatingbutton > a > img{

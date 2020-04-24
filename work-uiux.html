@@ -32,10 +32,11 @@
         </div> 
         
         <div id="extPage" class="extPage" style="display: none;">  
-            <div class="closePopup"  onclick="openWindow('extPage');"> </div>    
+            <div class="closePopup"  onclick="openWindow('extPage');"> </div> 
             <div class="articleFrame" onclick="openWindow('extPage');">
-                <div class="closeButton"><a>&lt;</a></div>
-                <div class="topButton"  onclick="topiFunction();"><a>&there4;</a></div>
+                
+                <div class="closeButton"><a onclick="openWindow('extPage');">&lt;</a></div>
+                <div class="topButton" ><a  onclick="topiFunction();">&there4;</a></div>
                 <iframe id="article" class="article"></iframe>
             </div>   
         </div>

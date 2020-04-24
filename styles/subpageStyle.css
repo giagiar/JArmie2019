@@ -4,7 +4,7 @@
 .logohome{
     position:fixed;
     margin: -5px;    
-    z-index: 100000;
+    z-index: 20000;
 }
 
 #com1, #com2, #com3, #Write1, #Write2, #Write3, #photography1, #photography2, #photography3 {
@@ -54,7 +54,7 @@ a.catalogue:active{
 .closePopup{
     width: 100vw;
     height: 100vh;
-    position: fixed;
+    position:fixed;
     background-color: rgba(0,0,0,0.3);
     left: 0;
     right:0;
@@ -65,13 +65,13 @@ a.catalogue:active{
 .cataList{
     display: none; 
     position: absolute; 
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .extPage{
     display: none; 
     position: absolute; 
-    z-index: 100000;
+    z-index: 50000;
 }
 
 .secondtitleCh{
@@ -84,7 +84,6 @@ a.catalogue:active{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     color: white;
-    z-index: 10;
 }
 
 .backImg{
@@ -174,13 +173,10 @@ a.catalogue:active{
     opacity: 0;  /* make it transparent */
 }
 
-
-
 .photo  {  
     width: inherit;
     height: auto;
     position: relative;
-    z-index:10;
 }
 
 .photo > img{
@@ -196,7 +192,6 @@ a.catalogue:active{
     height: auto;
     margin-bottom: 50px;
     position: relative;
-    z-index:10;
     vertical-align:top;
 }
 
@@ -250,28 +245,7 @@ a.catalogue:active{
     border-radius: 2px;
     margin: 50px 0;
 }
-.mainDescriptionEn :before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0%;
-    left: 0%;
-    z-index: -1;
-    background-color:rgba(33,30,85,0.6);   
-    transform: rotate(-20deg);
-    /* Safari */
-    -webkit-transform: rotate(-20deg);
 
-    /* Firefox */
-    -moz-transform: rotate(-20deg);
-
-    /* IE */
-    -ms-transform: rotate(-20deg);
-
-    /* Opera */
-    -o-transform: rotate(-20deg);
-}
 
 .mainDescriptionEn{
     background-color:rgba(33,30,85,0.6);   
@@ -286,22 +260,8 @@ a.catalogue:active{
     border-bottom: 1px solid #211E55;
     }
 
-.descriptionW{
-    color: white;
+.descriptionBr, descriptionSymbol{
     position: relative;
-    z-index:10;
-}
-
-p.descriptionW, h2.descriptionW{
-    margin:8px 0;
-}
-
-.descriptionBr{
-    position: relative;
-    z-index:10;
-}
-
-p.descriptionBr, h2.descriptionBr, h2.descriptionSymbol{
     margin:8px 0;
 }
 
@@ -370,13 +330,13 @@ ul {
 .articleFrame{
     width: 100%;
     max-width: 1200px;
-    height:98vh;
+    height:auto;
     background-color:transparent; 
     border-radius: 2px 0 0 2px;
     position:fixed; 
     margin-top: 1vh;
     outline:none;
-    z-index: 10000;
+    z-index: 80000;
 }
 
 .article{
@@ -386,6 +346,7 @@ ul {
     border-radius: 2px 0 0 2px;
     border: 0;
     box-shadow:1px 1px 6px 2px #888888;
+    z-index:100000;
 }
 
 
@@ -418,7 +379,7 @@ ul {
     color: #D0104C;
     background-color:rgba(255,255,255,1); 
     font-size: 12pt;
-    z-index: 1000;
+    z-index: 100000;
     text-align: center;
     box-shadow:0px 0px 6px 2px #DDDDDD;
     }
