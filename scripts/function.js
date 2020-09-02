@@ -133,8 +133,22 @@ function topFunction() {
 }
 
 function topiFunction() {
-    document.article.scrollTop = 0; // For Safari
-    document.article.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    //document.getElementById('article').contentWindow.scrollTo(0,0); 
+    var scrollHeight = document.getElementById('article').contentWindow.scrollY;
+    alert(scrollHeight);
+    /*const scrollHeight = document.getElementById('article').contentWindow.scrollY,
+          scrollStep = Math.PI / ( 20 ),
+          cosParameter = scrollHeight / 2;
+    var   scrollCount = 0,
+          scrollMargin,
+          scrollInterval = setInterval( function() {
+            if ( document.getElementById('article').contentWindow.scrollY != 0 ) {
+                scrollCount = scrollCount + 1;  
+                scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep);
+                document.getElementById('article').contentWindow.scrollTo( 0, ( scrollHeight - scrollMargin ) );
+            } 
+            else clearInterval(scrollInterval); 
+        }, 15 );*/
 }
  
 function loadpage(id,pageurl) {
@@ -143,10 +157,22 @@ function loadpage(id,pageurl) {
 
 
 function scrollFunction() {
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
     document.getElementById('floatingbutton').style.display = "block";
   } else {
     document.getElementById('floatingbutton').style.display = "none";
   }
 }
 
+var url = document.URL;
+var hash = url.substring(url.indexOf('#'));
+
+$(".nav-tabs").find("button").each(function(key, val) {
+    if (hash == $(val).attr('href')) {
+        $(val).click();
+    }
+    
+    $(val).click(function(ky, vl) {
+        location.hash = $(this).attr('href');
+    });
+});

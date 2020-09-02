@@ -1,0 +1,272 @@
+/*
+
+	GalleryView Stylesheet
+	
+	Use the CSS rules below to modify the look of your gallery.
+	 
+	To create additional rules, use the markup below as a guide to GalleryView's architecture.
+*/
+
+/*----- www.dorsetdog.com -----*/
+/*----- Reset padding -----*/
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+	padding-bottom: 10px;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+ 
+/* ----- end resets ----- */ 
+/* GALLERY LIST */
+/* IMPORTANT - Change '#myGallery' to the ID of your gallery list to prevent a flash of unstyled content */
+#slideshow { display: none; }
+
+.gv_galleryWrap { position: relative; background:black; font-size: 10pt; }
+
+/* GALLERY DIV */
+.gv_gallery { overflow: hidden; position: relative;}
+
+.gv_imageStore { visibility: hidden; position: absolute; top: -10000px; left: -10000px; }
+
+
+/*************************************************/
+/**   PANEL STYLES								**/
+/*************************************************/
+
+.gv_infobar{
+    display:block !important;
+      /* IE 8 */
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)" !important;
+      /* IE 5-7 */
+      filter: alpha(opacity=50) !important;
+      /*good browsers*/
+      opacity: 0.5  !important;
+}
+.gv_panelWrap { width:100%; filter: inherit; position: absolute; overflow: hidden; }
+
+.gv_panel-loading { background: url(img-loader.gif) 50% 50% no-repeat #aaa; }
+.gv_frame-loading { background: url(img-loader.gif) 50% 50% no-repeat #aaa; }
+
+/* GALLERY PANELS */
+.gv_panel { filter: inherit; position: absolute; top: 0; left: 0; overflow: hidden; z-index: 10; }
+.gv_panel img { position: absolute; }
+
+ /*title and caption background */
+.gv_overlay { position: absolute; background: #222; z-index: 20; opacity: .6; }
+
+
+	/*title text */
+.gv_overlay h4 { 
+	color: white; 
+	margin: 4px; 
+	margin-left:20px;
+	font-weight: bold; 
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:14px;
+	}
+	/*caption text */
+.gv_overlay p { 
+	color: white; 
+	margin:4px; 
+	margin-left:20px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:14px;
+}
+
+/* image number */
+.gv_infobar {
+	background: none;
+	padding: 0 0.5em;
+	line-height: 1.5em;
+	height: 1.5em;
+	font-size: 14pt;
+	font-weight: bold;
+	color: white;
+	
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: inline;
+	vertical-align: middle;
+	z-index: 80;
+	
+}
+/* the i in the caption bar */
+.gv_showOverlay { 
+	position: absolute; 
+	width: 20px; 
+	height: 20px; 
+	background: url(https://lh3.googleusercontent.com/-8rzsiQnY3hI/UmMWXRcSLUI/AAAAAAAAGTA/m_FUEJ-VPr0/s20/info.png) #222; 
+	cursor: pointer;
+	z-index: 200;
+}
+
+
+/*************************************************/
+/**   FILMSTRIP STYLES							**/
+/*************************************************/
+
+.gv_filmstripWrap { overflow: hidden; position: absolute; }
+
+
+/* FILMSTRIP */
+.gv_filmstrip { margin: 0; padding: 0; position: absolute; top: 0; left: 0; }
+
+/* FILMSTRIP FRAMES (contains both images and captions) */
+.gv_frame { 
+	cursor: pointer;
+	float: left;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+		/* not sure where to put this arrow to get it to sit on top of the top thumbnail */
+/*
+.gv_filmstrip a {
+	left:2px; 
+	top:10px; 
+	float: left;
+	position:absolute; 
+	display: inline;	
+	width:20px; 
+	height:40px; 
+	background:url(https://lh5.googleusercontent.com/-OLiGM2GjSOw/UmMWXYgED8I/AAAAAAAAGSw/XpmUDCNM4Yk/s40/arrow-red.png) top left no-repeat ; 
+}
+*/
+
+/* WRAPPER FOR FILMSTRIP IMAGES */
+.gv_frame .gv_thumbnail { position: relative; overflow: hidden !important; }
+
+/* WRAPPER FOR CURRENT FILMSTRIP IMAGE */
+.gv_frame.current .gv_thumbnail {}
+
+/* FRAME IMAGES */
+.gv_frame img { border: #fff; position: absolute; }
+
+/* FRAME CAPTION */
+.gv_frame .gv_caption { height: 14px; line-height: 14px; font-size: 14px; text-align: center; color:white; }
+
+/* CURRENT FRAME CAPTION */
+.gv_frame.current .gv_caption { }
+
+/* POINTER FOR CURRENT FRAME */
+.gv_pointer {
+	border-color: black;
+}
+
+/* NAVIGATION BUTTONS */
+.gv_navWrap {
+	text-align: center;
+	position: absolute;
+	height: 400px;
+	width: 20px;
+}
+.gv_navPlay,
+.gv_navPause,
+.gv_navNext,
+.gv_navPrev {
+	
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	filter:alpha(opacity=80);
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	vertical-align: middle;
+}
+.gv_navPlay:hover,
+.gv_navPause:hover,
+.gv_navNext:hover,
+.gv_navPrev:hover {
+	opacity: 1.0;
+	-moz-opacity: 1.0;
+	-khtml-opacity: 1.0;
+	filter:alpha(opacity=80);
+}
+
+
+.gv_navPlay {
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	background: url(https://lh5.googleusercontent.com/-sSSTt48tsgU/UmMWZeLs5WI/AAAAAAAAGTg/vRtWEKBEll4/s30/play-big.png) top left no-repeat;
+	
+}
+.gv_navPause {
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	background: url(https://lh3.googleusercontent.com/-U0aBz7lANSA/UmMWY-AwIOI/AAAAAAAAGTY/IHWDGsNE4RE/s30/pause-big.gif) top left no-repeat;
+}
+.gv_navNext {
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	background: url(https://lh5.googleusercontent.com/-d5nb-G7aEWI/UmMWYOY9xzI/AAAAAAAAGTI/fckXjVGyP6w/s20/next.png) top left no-repeat;
+}
+.gv_navPrev {
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	background: url(https://lh3.googleusercontent.com/-Jlhhf6U6dTg/UmMWairVHUI/AAAAAAAAGT4/bYAZjbljTUE/s20/prev.png) top right no-repeat;
+}
+
+
+/* css for the big image buttons */
+
+.gv_panelNavPrev,
+.gv_panelNavNext {
+	position: absolute;
+	display: inline;
+	opacity: 0.9;
+	-moz-opacity: 1.0;
+	-khtml-opacity: 1.0;
+	filter:alpha(opacity=90);
+	z-index: 200;
+}
+
+.gv_panelNavPrev:hover,
+.gv_panelNavNext:hover {
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	filter:alpha(opacity=90);
+}
+
+.gv_panelNavNext {
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	background: url(https://lh5.googleusercontent.com/-hziCkzSsJ9g/UmMWYbRcvsI/AAAAAAAAGTQ/n45WJTQhn0s/s40/panel-next.png) top left no-repeat;
+}
+.gv_panelNavPrev {
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	background: url(https://lh5.googleusercontent.com/-8EbVdhGCZzs/UmMWYxqa2XI/AAAAAAAAGTw/QHyJreu6hdg/s40/panel-prev.png) top right no-repeat;
+}

@@ -134,7 +134,7 @@ hr {
 }
 
 .mylife{
-    font-size: 12pt;
+    font-size: 20pt;
     height: auto;
     bottom:0px; 
     letter-spacing: 0.3em;
@@ -201,10 +201,6 @@ hr {
 }
 
 
-.mylife{
-    font-size: 20pt; 
-    color:white;   
-}
 
 .menu{
     float:right;

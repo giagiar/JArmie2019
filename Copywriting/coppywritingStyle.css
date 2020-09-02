@@ -6,8 +6,11 @@ p, a, h1, h2, h3, h4, h5, h6{
     font-family: 'Roboto','Noto Sans HK', 'Arial', sans-serif;
     text-align: justify;
     text-justify:inter-word;
-    line-height: 1.6;
-    letter-spacing: 0.1em;
+    line-height: 2;
+    letter-spacing: 0.2em;
+}
+p, h2, h3, h4{
+    margin: 20px 0 40px 0;
 }
 
 h1{ background: #211E55;
@@ -30,24 +33,28 @@ h4{ color: #211E55;
     font-weight: 500;}
 
 
-h5{ color:#563F2E;
-    font-size: 10pt;
+h5{ color:#464E7E;
+    font-size: 11pt;
     font-weight: 300;
+    margin: 30px;
     padding: 10px;
-    border-radius:3px;
-    background-color: #DDD23B;
+    border-radius:5px;
+    border-left: 3px solid #464E7E;
+    border-right: 3px solid #464E7E;
+    text-align: center;
 }
 
 h6{ color: #c0c0c0;
     font-size: 10pt;
     font-weight: 300;
     text-align: center;
-    margin:5px;}
+    margin:10px;}
 
 
 p{ color: #333333;
     font-size: 11pt;
-    font-weight: 300;}
+    font-weight: 300;
+    }
 
 a { text-decoration: none;
     color:#D0104C;
