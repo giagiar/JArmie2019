@@ -18,10 +18,14 @@
     <link rel="shortcut icon" href="mainImg/logo-05.png">
     <link rel="apple-touch-icon" sizes="180x180" href="mainImg/logo.png">
     <script src="scripts/function.js"></script>
-	
+	                
 </head>
 <html >
-<body onload="changeUI('com','4');"> 
+<body onload="changeUI('photography','5'); topFunction();"> 
+<script>window.onscroll = function() {scrollFunction()};</script>
+
+<div id="floatingbutton" class="floatingbutton" > <a onclick="topFunction();" title="to top"><img  src="mainImg/totopbutton.png"/></a></div>
+    
 <div class="maxWidth">
     <div>
         <div class="logohome" >
@@ -75,27 +79,85 @@
             </span></div>
         </div>
     </div>
-    
-    
-   
-    <div  class="backpattern">
-        
+
         
         <div class="rowTitle">
-            <button id="btnvolunteer1" class="headTitle divTitle" onclick="changeUI('volunteer','1');">Photography</button>
-                    </div>
-  
-        <div id="volunteer">              
-            <div id="volunteer1"  class="volunteer">
+            <button id="btnphotography5" class="headTitle divTitle" onclick="changeUI('photography','5');">Photography</button>
+            <button id="btnphotography4" class="divTitle" onclick="changeUI('photography','4');">Scene</button>
+            <button id="btnphotography3" class="divTitle" onclick="changeUI('photography','3');">Architecture</button>
+            <button id="btnphotography2" class="divTitle" onclick="changeUI('photography','2');">Mountains</button>
+            <button id="btnphotography1" class="divTitle" onclick="changeUI('photography','1');">Food</button>
+        </div>
+    
+        <div  class="backpattern"><div class="space-10"></div>
+            
+        <div id="photography">              
+            <div id="photography5" class="photography">
             
                 <div><div class="subdiv">
                 <p class="mainDescriptionEn">Photography</p>
                 <p class="mainDescriptionCh">我的視角</p>
                 </div></div>
                 
-                <div style="padding:100px;">UNDER CONSTRUCTION</div>
                 
-        </div></div>
+                <!-- add photos here -->
+                <input type="text" id="json" value="JSON/photography.json" style="display: none;">
+                
+                <div id="folder"></div>
+                <script src="scripts/loadFolder.js"></script>
+                
+            </div>
+        
+            <div id="photography4" class="photography">
+            
+                <div><div class="subdiv">
+                <p class="mainDescriptionEn">test1</p>
+                <p class="mainDescriptionCh">我的視角</p>
+                </div></div>
+                
+                <!-- add photos here -->
+            <input type="text" id="json" value="JSON/photography2.json" style="display: none;">
+                <div id="folder" class="folder" > </div>
+                <script src="scripts/loadFolder.js"></script>
+            
+            </div>
+        
+            <div id="photography3" class="photography" >
+            
+                <div><div class="subdiv">
+                <p class="mainDescriptionEn">test2</p>
+                <p class="mainDescriptionCh">我的視角</p>
+                </div></div>
+                
+                <!-- add photos here -->
+                <div id="folder" class="folder" > </div>
+                
+            </div>
+            
+            <div id="photography2" class="photography">
+            
+                <div><div class="subdiv">
+                <p class="mainDescriptionEn">test3</p>
+                <p class="mainDescriptionCh">我的視角</p>
+                </div></div>
+                
+                <!-- add photos here -->
+                <div id="folder" class="folder" > </div>
+                
+            </div>
+            
+            <div id="photography1" class="photography">
+            
+                <div><div class="subdiv">
+                <p class="mainDescriptionEn">test3</p>
+                <p class="mainDescriptionCh">我的視角</p>
+                </div></div>
+                
+                <!-- add photos here -->
+                <div id="folder" class="folder" > </div>
+                
+            </div>
+        </div>
     </div>
 </div>    
     
