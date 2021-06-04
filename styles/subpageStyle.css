@@ -344,8 +344,9 @@ ul {
     height:98vh;
     outline: none;
     border-radius: 2px 0 0 2px;
-    border: 0;
+    border: 3px;
     box-shadow:1px 1px 6px 2px #888888;
+
 }
 
 
